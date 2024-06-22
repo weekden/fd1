@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    transition: margin-left 0.3s ease-in-out;
+}
+
+.burger-menu {
+    background-color: #333;
+    padding: 15px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.burger-icon {
+    font-size: 24px;
+}
+
+.menu-items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu-items li {
+    margin-right: 20px;
+}
+
+.menu-items a {
+    text-decoration: none;
+    color: white;
+}
+
+#burger-checkbox {
+    display: none;
+}
+
+/* Стили для сдвига контента */
+#burger-checkbox:checked ~ .content {
+    margin-left: 250px; /* Ширина бургер-меню */
+}
+

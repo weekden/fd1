@@ -1,0 +1,137 @@
+.customer {
+    background-color: rgb(240, 248, 255);
+}
+
+.customer__cards {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.customer__card {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    justify-content: start;
+    padding: 20% 4% 4% 2%;
+    width: 31%;
+}
+
+.customer__logo {
+    position: absolute;
+    border-radius: 50%;
+    width: 6em;
+    top: -40px;
+    left: 15px;
+}
+
+.customer__symbol {
+    position: absolute;
+    width: 2.5em;
+    height: 2.5em;
+    top: 35px;
+    left: 75px;
+    border-radius: 50%;
+    background-color: rgb(225, 250, 238);
+}
+.symbol {
+    position: absolute;
+    top: 1em;
+    left: 0.5em;
+}
+
+.customer-info__description {
+    padding-bottom: 40px;
+    color: rgb(122, 139, 148);
+}
+
+.customer-info__name {
+    color: rgb(57, 66, 71);
+    font-weight: bolder;
+    padding-bottom: 10px;
+
+}
+
+.customer-info__job-title {
+    font-size: 0.8rem;
+    color: rgb(122, 139, 148);
+}
+
+.customer input {
+    display: none;
+}
+
+@media (max-width:767px) {
+
+.customer__cards {
+    display: block;
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+.customer__card {
+    width: initial;
+    padding: 20% 4% 4% 2%;
+    position: absolute;
+    opacity: 0;
+    z-index: 0;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+#customer_card1:checked ~ .customer__cards > .customer_card1,
+#customer_card2:checked ~ .customer__cards > .customer_card2,
+#customer_card3:checked ~ .customer__cards > .customer_card3 {
+    opacity: 1;
+    z-index: 1;
+    transform: scale(1);
+}
+
+.controls {
+    position: absolute;
+    left: 50%;
+    bottom: 120px;
+    margin-left: -100px;
+}
+
+.controls label {
+    cursor: pointer;
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    border: 1px solid rgb(169, 169, 169);
+    opacity: 0.5;
+    margin: 12px 12px 0 16px;
+    position: relative;
+    border-radius: 50%;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+#customer_card1:checked ~ .controls label:nth-of-type(1),
+#customer_card2:checked ~ .controls label:nth-of-type(2),
+#customer_card3:checked ~ .controls label:nth-of-type(3) {
+    background-color: rgb(169, 169, 169);
+    opacity: 0.5;
+}
+
+.controls label::after {
+    content: "";
+    display: block;
+    border: 2px solid rgb(169, 169, 169);
+    opacity: 0.5;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    border-radius: 50%;
+    top: -5.5px;
+    left: -5.5px;
+}
+
+}
+
+   
+
+   

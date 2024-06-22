@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Road Trips</title>
+        <link rel="stylesheet" href="../style.css" />
+        <link rel="stylesheet" href="trips.css" />
+        <link rel="stylesheet" href="../camp-head_style.css" />
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300&display=swap");
+            @import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@400&display=swap");
+            @import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@500&display=swap");
+            @import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@600&display=swap");
+            @import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@700&display=swap");
+        </style>
+        <script src="https://kit.fontawesome.com/a509a621f7.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="fade-in">
+        <header>
+            <div class="container-header container-header__3nd-level-pages">
+                <nav class="menu" id="menu">
+                    <a href="../index.html" class="menu__logo">
+                        <div class="logo__img">
+                            <i class="logo__img-img fa-solid fa-mountain-sun fa-xl"></i>
+                        </div>
+                        <div class="logo__text">Dandy Campers <br />RV Rentals</div>
+                    </a>
+                    <input type="checkbox" id="burger" />
+                    <label class="menu__btn" for="burger">
+                        <span></span>
+                    </label>
+                    <div class="menu__buttons menu__buttons--burger">
+                        <div class="buttons-row">
+                            <a class="buttons-row__button check-availability__btn" href="../check.html">Check Availability</a>
+                            <details class="spoiler spoiler-menu">
+                                <summary class="spoiler__header">
+                                    <a class="buttons-row__button nav" href="../RVs/rvs.html">RVs</a>
+                                    <i class="spoiler__icon fa-solid fa-chevron-down fa-2xs"></i>
+                                </summary>
+                                <ul class="rvs-list">
+                                    <li><a class="rvs-list__name" href="../RVs/euro_camper.html">EuroCamper</a></li>
+                                    <li><a class="rvs-list__name" href="../RVs/vagong.html">Vagon</a></li>
+                                    <li><a class="rvs-list__name" href="../RVs/ranger_van.html">Ranger Van</a></li>
+                                    <li><a class="rvs-list__name" href="../RVs/travel_trailer.html">Travel Trailer</a></li>
+                                    <li><a class="rvs-list__name" href="../RVs/flying_cloud.html">Flying Cloud</a></li>
+                                    <li><a class="rvs-list__name" href="../RVs/motor_home.html">MotorHome</a></li>
+                                </ul>
+                            </details>
+                            <a class="buttons-row__button nav" href="../Trips/trips.html">Road Trips</a>
+                            <a class="buttons-row__button nav" href="../FAQ/faq.html">FAQ</a>
+                            <a class="buttons-row__button nav" href="../About/about.html">About</a>
+                        </div>
+                    </div>
+                    <div class="menu__buttons">
+                        <ul class="buttons-row">
+                            <li id="rvs"><a class="buttons-row__button nav" href="../rvs.html">RVs</a></li>
+                            <li><a class="buttons-row__button nav" href="trips.html" style="color: #73d7be">Road Trips</a></li>
+                            <li><a class="buttons-row__button nav" href="../FAQ/faq.html">FAQ</a></li>
+                            <li><a class="buttons-row__button nav" href="../About/about.html">About</a></li>
+                            <li><a class="buttons-row__button green-button check-availability__btn" href="../check.html">Check Availability</a></li>
+                            <ul class="rvs-list">
+                                <li><a class="rvs-list__name" href="euro_camper.html">EuroCamper</a></li>
+                                <li><a class="rvs-list__name" href="vagong.html">Vagon</a></li>
+                                <li><a class="rvs-list__name" href="ranger_van.html">Ranger Van</a></li>
+                                <li><a class="rvs-list__name" href="travel_trailer.html">Travel Trailer</a></li>
+                                <li><a class="rvs-list__name" href="flying_cloud.html">Flying Cloud</a></li>
+                                <li><a class="rvs-list__name" href="motor_home.html">MotorHome</a></li>
+                            </ul>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <div class="chat" id="chat">
+            <input type="checkbox" name="open-chat-btn" id="open-chat" />
+            <label for="open-chat">
+                <button onclick="openChat()" class="green-button chat__btn" id="chat__btn">
+                    <div class="logo__img chat__btn-img chat__btn-fullscreen">
+                        <i class="logo__img-img chat__btn-img-img fa-solid fa-mountain-sun fa-l"></i>
+                    </div>
+                    <p class="chat__btn-img-text chat__btn-fullscreen">Let's Chat!</p>
+                    <div class="chat__btn-adaptive">
+                        <i class="fa-regular fa-comment-dots fa-2xl" style="color: #ffffff"></i>
+                    </div>
+                </button>
+            </label>
+            <div class="chat-form">
+                <div class="chat-form__header">
+                    <div class="logo__img chat-form__logo">
+                        <i class="logo__img-img chat-form__logo-img fa-solid fa-mountain-sun fa-2xl"></i>
+                    </div>
+                    <div class="chat-form__header-text">
+                        <p>Dandy Campers</p>
+                        <p>We’ll reply as soon as we can</p>
+                    </div>
+                    <input type="checkbox" name="close-chat-btn" id="close-chat" />
+                    <label for="close-chat" onclick="closeChat()">
+                        <i class="chat-form__header-mark fa-solid fa-xmark fa-xl"></i>
+                    </label>
+                </div>
+                <div class="chat-form__main"></div>
+                <div class="chat-form__footer">
+                    <input type="text" name="mesage" id="messageInput" placeholder="Welcome to Dandy Campers. How can we help?" />
+                    <button class="chat-form__footer-button" type="submit" name="send-mesage" onclick="sendMessage()" id="mesage">
+                        <i class="chat-form__footer-icon fa-brands fa-rocketchat fa-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <main class="post__wrapper">
+            <div class="container-block container-block__3nd-level-pages">
+                <div class="search-container">
+                    <div class="button-back">
+                        <a href="trips.html" onclick="history.back()"><i class="fa-solid fa-chevron-left"></i> All posts</a>
+                    </div>
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" name="search" id="search-input" placeholder="Saerch" />
+                    </div>
+                </div>
+                <div class="post-container">
+                    <div class="posts-sumtitles">
+                        <div class="posts-sumtitles__date">
+                            <p>May 16, 2023 1min</p>
+                        </div>
+                        <div class="post-subtitles__share">
+                            <input type="checkbox" id="button-share1" />
+                            <label for="button-share1"><i class="fa-solid fa-share-alt"></i></label>
+                            <div class="share-box share-box1">
+                                <p>Share Post</p>
+                                <p>
+                                    <a href="https://www.facebook.com" target="_blank"
+                                        ><i class="fa-brands fa-square-facebook fa-xl" style="color: coral"></i
+                                    ></a>
+                                    <a href="https://www.instagram.com" target="_blank"
+                                        ><i class="fa-brands fa-square-instagram fa-xl" style="color: coral"></i
+                                    ></a>
+                                    <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-square-twitter fa-xl" style="color: coral"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-container__header">
+                        <h3>Why We Love RV Travel</h3>
+                    </div>
+                    <div class="post-container__header--subtitel">
+                        <p>
+                            Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue
+                            reading.
+                        </p>
+                    </div>
+                    <div class="post-container__text">
+                        <p>
+                            Welcome to your blog post. Use this space to connect with your readers and potential customers in a way that’s current and
+                            interesting. Think of it as an ongoing conversation where you can share updates about business, trends, news, and more.
+                        </p>
+                    </div>
+                    <div class="post-container__img">
+                        <img src="../camp_img/Trips/post4_webp.webp" alt="post4_webp" />
+                    </div>
+                    <div class="post-container__img--subtitle">
+                        “Do you have a design in mind for your blog? Whether you prefer a trendy postcard look or you’re going for a more editorial style blog -
+                        there’s a stunning layout for everyone.”
+                    </div>
+                    <div class="post-container__header--smoll">
+                        <h5>Create Relevant Content</h5>
+                    </div>
+                    <div class="post-container__text">
+                        <p>
+                            Writing a blog is a great way to position yourself as an authority in your field and captivate your readers’ attention. Do you want
+                            to improve your site’s SEO ranking? Consider topics that focus on relevant keywords and relate back to your website or business. You
+                            can also add hashtags (#vacation #dream #summer) throughout your posts to reach more people, and help visitors search for relevant
+                            content.
+                            <br /><br />
+                            Blogging gives your site a voice, so let your business’ personality shine through. Choose a great image to feature in your post or
+                            add a video for extra engagement. Are you ready to get started? Simply create a new post now.
+                        </p>
+                    </div>
+
+                    <div class="post-container__icons">
+                        <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-square-facebook fa-xl" style="color: coral"></i></a>
+                        <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-square-instagram fa-xl" style="color: coral"></i></a>
+                        <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-square-twitter fa-xl" style="color: coral"></i></a>
+                    </div>
+                    <div class="posts-count">
+                        <div class="posts-count__view">
+                            <i class="posts-count__icon fa-regular fa-eye"></i>
+                            <div class="posts-coun__count">0</div>
+                        </div>
+                        <div class="posts-count__coments">
+                            <i class="posts-count__icon fa-regular fa-message"></i>
+                            <div class="posts-coun__count">0</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-container__recent">
+                    <div class="post-container__recent--titles">
+                        <div class="post-recent__text">
+                            <p>Recent</p>
+                        </div>
+                        <div class="post-recent__button">
+                            <a href="trips.html">See All</a>
+                        </div>
+                    </div>
+                    <div class="post-container__recent--cards slider">
+                        <div class="recend-card slider-inner">
+                            <div class="recend-card__img">
+                                <a href="post2.html"><img class="recend-card__img-img" src="../camp_img/Trips/post2_webp.webp" alt="post2_webp" /></a>
+                            </div>
+                            <div class="posts-header">
+                                <h3>Lockdown Escape: Work & Travel From Your RV</h3>
+                            </div>
+                            <div class="posts-line"></div>
+                            <div class="posts-count">
+                                <div class="posts-count__view">
+                                    <i class="posts-count__icon fa-regular fa-eye"></i>
+                                    <div class="posts-coun__count">0</div>
+                                </div>
+                                <div class="posts-count__coments">
+                                    <i class="posts-count__icon fa-regular fa-message"></i>
+                                    <div class="posts-coun__count">0</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recend-card slider-inner">
+                            <div class="recend-card__img">
+                                <a href="post3.html"><img class="recend-card__img-img" src="../camp_img/Trips/post3_webp.webp" alt="post3_webp" /></a>
+                            </div>
+                            <div class="posts-header">
+                                <h3>Best Routes for Seeing Fall Foliage</h3>
+                            </div>
+                            <div class="posts-line"></div>
+                            <div class="posts-count">
+                                <div class="posts-count__view">
+                                    <i class="posts-count__icon fa-regular fa-eye"></i>
+                                    <div class="posts-coun__count">0</div>
+                                </div>
+                                <div class="posts-count__coments">
+                                    <i class="posts-count__icon fa-regular fa-message"></i>
+                                    <div class="posts-coun__count">0</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recend-card slider-inner">
+                            <div class="recend-card__img">
+                                <a href="post5.html"><img class="recend-card__img-img" src="../camp_img/Trips/post5_jpeg.jpg" alt="post5_jpeg" /></a>
+                            </div>
+                            <div class="posts-header">
+                                <h3>Spectacular Places to Go Camping Under the Stars</h3>
+                            </div>
+                            <div class="posts-line"></div>
+                            <div class="posts-count">
+                                <div class="posts-count__view">
+                                    <i class="posts-count__icon fa-regular fa-eye"></i>
+                                    <div class="posts-coun__count">0</div>
+                                </div>
+                                <div class="posts-count__coments">
+                                    <i class="posts-count__icon fa-regular fa-message"></i>
+                                    <div class="posts-coun__count">0</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="prev" onclick="minusSlide()">&#10094;</a>
+                        <a class="next" onclick="plusSlide()">&#10095;</a>
+                    </div>
+                    <div class="slider-dots">
+                        <span class="slider-dots_item" onclick="currentSlide(0)"></span>
+                        <span class="slider-dots_item" onclick="currentSlide(1)"></span>
+                        <span class="slider-dots_item" onclick="currentSlide(2)"></span>
+                    </div>
+                </div>
+                <div class="comments-block">
+                    <input type="checkbox" name="button-comments" id="button-comments" />
+                    <p class="comments-block__header">Comments</p>
+                    <div class="posts-line"></div>
+                    <label for="button-comments"> Write comments... </label>
+                    <form action="#">
+                        <textarea name="input-comments" id="input-comments" cols="10" rows="1" placeholder="Write comments..." required></textarea>
+                        <div class="comments-block__icons">
+                            <i class="comments-icon fa-regular fa-face-smile fa-lg" title="Add Emodje"></i>
+                            <input type="file" id="add-photo" />
+                            <label for="add-photo">
+                                <i class="comments-icon fa-solid fa-camera fa-lg" title="Add Photo"></i>
+                            </label>
+                            <i class="comments-icon fa-solid fa-video fa-lg" title="Add Vidio"></i>
+                        </div>
+                        <div class="comments-block__buttons">
+                            <button class="comments-block__button-close" type="reset" onclick="closeComments()">Cancel</button>
+                            <button class="comments-block__button-submite" type="submit" value="Push">Publish</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="container_footer">
+                <button class="button-up cyrcle" id="button-up" onclick="scrollUp()">
+                    <i class="fa-solid fa-angles-up fa-2xl" style="color: #ffffff"></i>
+                </button>
+                <div class="left">
+                    <a href="#menu" class="menu__logo">
+                        <div class="logo__img">
+                            <i class="logo__img-img fa-solid fa-mountain-sun fa-xl"></i>
+                        </div>
+                        <div class="logo__text">Dandy Campers <br />RV Rentals</div>
+                    </a>
+                    <button onclick="document.location='../check.html'" class="green-button check-availability__btn">Check Availability</button>
+                    <div class="address">
+                        <p>500 Terry Francine Street</p>
+                        <p>San Francisco, CA 94158</p>
+                        <p>info@mysite.com</p>
+                        <p>123-456-7890</p>
+                    </div>
+                    <div class="menu-links">
+                        <a class="buttons-row__button nav" href="../RVs/rvs.html">RVs</a>
+                        <a class="buttons-row__button nav" href="trips.html">Road Trips</a>
+                        <a class="buttons-row__button nav" href="../FAQ/faq.html">FAQ</a>
+                        <a class="buttons-row__button nav" href="">About</a>
+                    </div>
+                    <div class="footer-subtitles">
+                        <div class="footer-subtitles__icons">
+                            <a href="https://www.facebook.com/wix" target="_blank"
+                                ><i class="footer-subtitles__icon fa-brands fa-square-facebook fa-xl" style="color: coral"></i
+                            ></a>
+                            <a href="https://www.instagram.com/wix/" target="_blank"
+                                ><i class="footer-subtitles__icon fa-brands fa-square-instagram fa-xl" style="color: coral"></i
+                            ></a>
+                        </div>
+                        <p class="footer-subtitles__text">© 2035 by Dandy Campers. Powered and secured by Wix</p>
+                    </div>
+                </div>
+                <form class="right footr-form" action="#" method="#">
+                    <div class="right-title">
+                        <p>Contact Us</p>
+                    </div>
+                    <div class="item-right first-name">
+                        <p>First Name</p>
+                        <input type="text" name="first-name" />
+                    </div>
+                    <div class="item-right last-name">
+                        <p>Last Name</p>
+                        <input type="last-name" name="last-name" />
+                    </div>
+                    <div class="item-right email">
+                        <p>Email*</p>
+                        <input type="email" name="email" required />
+                    </div>
+                    <div class="item-right subject">
+                        <p>Subject</p>
+                        <input type="text" name="subject" />
+                    </div>
+                    <div class="item-right message">
+                        <p>Message*</p>
+                        <textarea name="message" required id="" cols="55" rows="10"></textarea>
+                    </div>
+                    <button class="green-button submit__btn" type="submit">Submit</button>
+                </form>
+            </div>
+        </footer>
+        <script src="../script.js"></script>
+    </body>
+</html>

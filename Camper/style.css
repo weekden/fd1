@@ -1,0 +1,163 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Hind Madurai', sans-serif;
+    scroll-behavior: smooth;
+    position: relative;
+}
+
+.green-button {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(39, 124, 82);
+    color: transparent;
+    cursor: pointer;
+    padding: 0 20px;
+    border-radius: 50px;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition-duration: 0.5s;
+    line-height: 1.2rem;
+    overflow: hidden;
+}
+
+.logo__img, .subtitle-cyrcle, .cyrcle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(255, 127, 80);
+    position: relative;
+    margin: 0 20px;
+}
+
+.green-button:hover {
+    background-color: rgb(30, 55, 35);
+}
+
+.container-block {
+    padding:10% 5% 5% 5%; 
+}
+
+.container-block__title h2 {
+    font-size: 2.6rem;
+    font-weight: 300;
+    margin: 50px 0;
+}
+
+.container-block__subtitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    font-weight: bold;
+}
+
+.container-block__container {
+    display: flex;
+    align-items: center;
+}
+
+.subtitle-text h3 {
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+
+
+
+
+
+/* ___________________________header_for_all_pages_________________________ */
+
+.container-header.container-header__2nd-level-pages {
+    height: 420px;
+}
+
+.container-header.container-header__2nd-level-pages .header {
+    width: 100%;
+}
+
+
+.container-header.container-header__2nd-level-pages .header__main {
+    width: 100%;;
+    top: 180px;
+    margin-left: 0;
+}
+
+
+.container-header.container-header__2nd-level-pages .header-h {
+    margin: 0;
+    font-size: 5rem;
+    color: #ffffff;
+    line-height: 1rem;
+    text-align: center;
+}
+
+.container-header.container-header__2nd-level-pages .header-h3 {
+    color: #ffffff;
+    text-align: center;
+    padding-top: 50px;
+    font-weight: 100;
+    font-size: 1.3rem;
+}
+
+.container-header.container-header__3nd-level-pages {
+    height: 0;
+}
+
+.container-block.container-block__3nd-level-pages {
+    padding:100px 5% 5% 5%; 
+}
+
+.button-back a {
+    text-decoration: none;
+    color: black;
+}
+
+/* ____________________________page_loading_________________________________ */
+.fade-in {
+    opacity: 0.2;
+    transition: opacity 1.5s ease-in-out; 
+}
+
+.fade-in.page_active {
+    opacity: 1;
+}
+
+.active {
+    opacity: 1;
+    transform: translateY(0%);
+    transition: all 1.5s ease-in-out;
+}
+
+.activ_green-button {
+    width: 200px;
+    white-space: nowrap;
+    transition: 1s ease;
+    color: #ffffff;
+}
+
+@media (max-width: 687px) {
+    .container-header.container-header__2nd-level-pages .header__main  {
+        align-items: center;
+    }
+}
+@media (max-width: 500px) {
+    .container-header.container-header__2nd-level-pages .header-h{
+        font-size: 3.5rem;
+        line-height: 3rem;
+    }
+
+    .container-header.container-header__2nd-level-pages .header-h3 {
+        font-size: 1.1rem;
+        padding: 30px 5% 0 5%;
+    }
+
+    .container-header.container-header__2nd-level-pages  {
+        top: 0px;
+    }
+}
+
+
+

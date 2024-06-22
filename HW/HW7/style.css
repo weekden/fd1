@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Orbitron', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(30, 30, 30);
+}
+
+.header, .footer{
+    background-color: rgb(20, 20, 20);
+    color: rgb(180, 190, 135);
+    width: 100%;
+    text-align: center;
+    font-size: 1.8rem; 
+    padding: 2% 0%;
+}
+
+.left{
+    width: 25%;
+    float: left;
+}
+
+.navi h3{
+    font-size: 2rem;
+    text-align: center;
+    padding: 20% 0%;
+    letter-spacing: 0.5rem;
+    color: rgb(250, 234, 214);
+}
+
+.navi h3~a{
+    font-size: 1.5rem;
+    margin-left: 10%;
+    line-height: 4rem;
+    color: rgb(250, 235, 215);
+    text-decoration: none;
+    display: block;
+}
+
+.header2{
+    text-align: center;
+    color: rgb(250, 235, 215);
+    padding: 1% 0%;
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem;
+}
+
+.container{ 
+    background-image: url(img/background_comet.gif);
+    background-size: contain;
+    margin-left: 25%;
+    opacity: 0.6;
+}
+
+.img1, .img2{ 
+    float: left;
+    padding: 2%;
+    width: 35%;
+    opacity: 0.8;
+}
+
+.text1, .text2{
+    color: rgb(250, 235, 215);
+    text-align: justify;
+    padding: 2%;
+}
+
+.plug{
+    clear: both;
+}
+
+@media (max-width:1070px){
+    .left{
+        width: initial;
+        float: initial;
+    }
+
+    .navi h3~a{
+        font-size: 1.2rem;
+        margin-left: 0%;
+        line-height: 4rem;
+        display: inline-block;
+        text-align: center;
+        width: 24%;
+    }
+
+    .navi a{
+        font-size: 0.1rem;
+        display: inline;
+        text-align: center;
+    }
+
+    .navi h3{
+        padding: 2% 0%;
+    }
+    
+    .container{ 
+        margin-left: 0%;
+        background-image: url(img/background.jpg);
+        background-size: contain;
+    }
+
+    .header h1 .span2::before{
+        content: '\A';
+        white-space: pre; 
+    }    
+}
+
+@media (max-width:800px){
+    .header h1 .span1::before{
+        content: '\A';
+        white-space: pre; 
+    }   
+
+    .header, .footer{
+        font-size: 1.5rem;
+    }
+    
+
+    .navi{
+    display: none;
+    }
+
+    .img1, .img2{
+    width: 100%;
+    padding: 0% 0% 2% 0%;
+    opacity: 0.8;
+    }
+
+    .container, .header2{
+        background-image: none;
+    }
+
+}

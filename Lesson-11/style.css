@@ -1,0 +1,31 @@
+.cart{
+    width: 286px;
+    height: 360px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.top{
+    width: 286px;
+    height: 180px;
+    background-color: gray;
+    position: relative;
+}
+
+.size{
+    position: absolute;
+    top: 36%;
+    left: 40%;
+    position: 50px 50px;
+    color: white;
+}
+#right{
+    height: 30px;
+    width: 90px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+}
+.bottom{
+    padding: 10px;
+}

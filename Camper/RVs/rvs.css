@@ -1,0 +1,231 @@
+.rvs-catalog {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 5%;
+    grid-row-gap: 140px;
+    grid-template-areas: 
+    "rvs1 rvs2 rvs3"
+    "rvs4 rvs5 rvs6";
+    justify-content: center;
+}
+
+.rvs-card__img img {
+    width: 100%;
+    transition-duration: 0.5s;
+}
+
+.rvs-card__img {
+    width: 100%;
+    overflow: hidden;
+    max-height: auto;
+  
+}
+
+.rvs-card__img img:hover {
+    transform: scale(1.1) ;
+    cursor: pointer;
+}
+
+.rvs-card__name {
+    font-size: 2rem;
+    padding: 15px 0;
+}
+
+.rvs-card__price {
+    font-size: 1.2rem;
+    color: darkgrey;
+}
+
+.rvs-card1 {
+    grid-area: rvs1;
+}
+
+.rvs-card2 {
+    grid-area: rvs2;
+}
+
+.rvs-card3 {
+    grid-area: rvs3;
+}
+
+.rvs-card4 {
+    grid-area: rvs4;
+}
+
+.rvs-card5 {
+    grid-area: rvs5;
+}
+
+.rvs-card6 {
+    grid-area: rvs6;
+}
+
+
+.rvs__wrapper .container-block__subtitle {
+    margin: 100px 0;
+}
+
+.rvs-qestion {
+    background-color: rgb(248,247,242);
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ________________________css for all trailers________________________ */
+
+.rvs-page__wrapper {
+    background-color: rgb(248,247,242);
+}
+
+.rvs-page__wrapper .rvs-card__name {
+    font-size: 3rem;
+    padding: 0;
+}
+
+.rvs-page__wrapper .model-page__discription,
+.rvs-page__wrapper .model-page__specification {
+    margin-top: 100px;
+    list-style: inside;
+}
+
+.model-page {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.model-page__right-img {
+  height: 800px;
+
+}
+
+.model-page__right-img img:last-child {
+    display: none;
+}
+
+.model-page__right-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.model-page__left {
+    flex-basis: 40%;
+}
+
+.model-page__specification-icons {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 5%;
+    grid-template-areas:
+    "icon1 icon2"
+    "icon3 icon4";
+}
+
+.specification-icon1 {
+    grid-area: icon1;
+}
+
+.specification-icon2 {
+    grid-area: icon2;
+}
+
+.specification-icon3 {
+    grid-area: icon3
+}
+
+.specification-icon4 {
+    grid-area: icon4;
+}
+
+
+
+.model-page__specification-icon .cyrcle {
+ position: relative;
+ margin: 20px 0;
+ width: 60px;
+ height: 60px;
+}
+
+.specification-icon {
+    position: absolute;
+    top: 30px;
+    left: 26%;
+}
+
+.model-page__discription li {
+    font-size: 1.4rem;
+}
+
+
+@media (max-width: 840px) {
+    .rvs-catalog {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-column-gap: 5%;
+        grid-row-gap: 100px;
+        grid-template-areas: 
+        "rvs1 rvs2"
+        "rvs3 rvs4"
+        "rvs5 rvs6";
+        justify-content: center;
+    }
+    
+}
+
+@media (max-width: 650px) {
+    .model-page {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+    }
+
+    .model-page__right-img img:first-child {
+        display: none;
+    }
+
+    .model-page__right-img img:last-child {
+        display: block;
+    }
+
+    .model-page__right-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .rvs-page__wrapper .rvs-card__name {
+        margin-top: 0;
+        font-size: 3rem;
+    }
+
+    .rvs-page__wrapper .model-page__discription,
+    .rvs-page__wrapper .model-page__specification {
+    margin-top: 20px;
+    list-style: inside;
+    }
+
+    .model-page__specification-icons {
+        margin:0 15% 0 0;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .rvs-catalog {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+    }
+  
+    .model-page__discription li {
+    font-size: 1.2rem;
+    }
+
+}

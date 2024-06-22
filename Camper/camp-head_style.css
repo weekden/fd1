@@ -1,0 +1,1301 @@
+
+/* _________________________HEADER_____________________________ */
+.slow-show {
+    transform: translateY(40px);
+    opacity: 0;
+    transition: 0.8s ease 0s;
+}
+
+.container-header {
+    position: relative;
+    width: auto;
+    height: 950px;
+    background-color: rgba(0, 0, 0, 5);
+    overflow: hidden;
+}
+
+.header-img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    object-fit: cover;
+}
+
+.header__main {
+    position: absolute;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 250px;
+}
+
+.header {
+    width: 70%;
+}
+
+
+.header-h {
+    margin: 0 0 50px 0;
+    font-size: 6rem;
+    color: #ffffff;
+    line-height: 1em;
+}
+
+
+.check-availability {
+    width: 75%;
+    height: 90px;
+    background-color: #ffffff;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.check-availability__text {
+    font-size: 1.4rem;
+    margin-left: 5%;
+}
+
+.check-availability .check-availability__btn {
+   margin-right: 5%;
+}
+
+.menu {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    transition: top 0.3s ease;
+}
+
+
+.menu__logo {
+    margin-left: calc(2% - 20px);
+    display: flex;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.menu__buttons {
+    margin-right: calc(2% - 10px);
+}
+
+.logo__img-img, .chat-form__logo-img {
+    position: absolute;
+    top: 50%;
+    left: 12%;
+}
+
+.rvs-list {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    list-style: none;
+    top: 30px;
+    line-height: 2rem;
+}
+
+.buttons-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+   
+}
+
+ .rvs-list {
+   visibility: hidden;
+}
+
+#rvs:hover ~ .rvs-list, .rvs-list:hover{
+   visibility: visible;
+}
+
+.buttons-row__button, .rvs-list__name {
+    position: relative;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 20px 0;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.buttons-row .nav:hover, 
+.rvs-list__name:hover, 
+.container_footer .nav:hover  {
+    color:rgb(115, 215, 190) ;
+}
+
+.buttons-row .nav:target {
+    color:rgb(115, 215, 190) ;
+}
+
+
+.buttons-row .check-availability__btn {
+    padding: 10px;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+}
+
+.buttons-row .check-availability__btn:hover {
+    background-color: rgb(39, 124, 82);
+}
+
+#burger, [for="burger"], .menu__buttons--burger{
+    display: none;
+}
+
+
+/* _________________________CHAT_________________________________ */
+.chat__btn-adaptive {
+    display: none;
+}
+
+.chat .chat__btn {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    height: 50px;
+    border-radius: 12px;
+    width: 150px;
+    font-size: 1rem;
+    padding: 0 10px;
+}
+
+.chat__btn-img {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    margin: 0;
+}
+
+.chat__btn-img-img {
+    position: absolute;
+    top: 6px;
+    left: 4px;
+}
+
+.chat-form {
+    position: fixed;
+    right: 25px;
+    top: 130px;   
+    z-index: 100;
+    width: 400px;
+    display: none;
+}
+
+input#open-chat, input#close-chat {
+  display: none;
+}
+
+#open-chat:checked + label ~ .chat-form {
+    display: block;
+}
+
+.chat-form__main {
+    height: 400px;
+    background-color: rgb(233, 233, 233);
+    overflow-y: scroll;
+}
+
+.chat-form__message {
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    width: 50%;
+    margin-left: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chat-form__header {
+    background-color: rgb(244, 244, 244);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.chat-form__logo {
+    margin: 0;
+    width: 55px;
+    height: 55px;
+    margin: 20px;
+}
+
+.chat-form__logo-img {
+    color: rgb(255, 210, 173);
+}
+
+.chat-form__header-text {
+    flex-basis: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chat-form__header-text p:first-child {
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: rgb(200, 200, 200);
+}
+
+.chat-form__header-mark {
+    padding: 20px;
+    color: rgb(146, 146, 146) ;
+}
+
+.chat-form__header-mark:hover {
+    cursor: pointer;
+    color: rgb(200, 200, 200);
+}
+
+.chat-form__footer {
+    background-color: rgb(244, 244, 244);
+    height: 60px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+}
+
+.chat-form__footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.chat-form__footer input {
+    width: 80%;
+    height: 80%;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    text-indent: 20px;
+    background-color: rgb(244, 244, 244);
+}
+
+.chat-form__footer-button{
+    border: none;
+    outline: none;
+    background-color: rgb(244, 244, 244);
+    cursor: pointer;
+    color:  rgb(39, 124, 82);
+}
+
+.chat-form__footer-button:active {
+    color: rgb(24, 82, 53);
+}
+
+.chat-form__footer input::-webkit-input-placeholder {
+    font-size: 0.9rem;
+    color: rgb(170, 170, 170);
+}
+
+/* ____________________________BOOKS________________________________ */
+.books {
+    position: relative;
+    display: grid;
+    grid-template-columns: 33% 33% 23%;
+    grid-template-rows: repeat(6, 15%);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-areas: 
+    "book1 .     .    "
+    "book1 book2 book3"
+    "book1 book2 book3"
+    "book1 book2 book3"
+    "book1 book2 book4"
+    "book1 book2 book4";
+} 
+
+.books-tetle h3 {
+    width: 10px;
+    position: absolute;
+    z-index: 1;
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding: 20px 1%;
+    
+}
+
+.books-tetle {
+    z-index: 2;
+}
+
+
+
+.books-img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.book1 {
+    grid-area: book1;
+    background-color: rgb(39, 124, 82);
+}
+
+.book2 {
+    grid-area: book2;
+}
+
+.book3 {
+    grid-area: book3;
+}
+
+.book4 {
+    grid-area: book4;
+    background-color: coral;
+}
+
+.learn_more__btn {
+    margin: 0 20px;
+}
+
+/* ____________________INSTRUCTION________________________ */
+.instruction {
+    background-color: rgb(248,247,242);
+}
+
+.instruction-top__main,
+.instruction-bottom__main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.instruction-top__left,
+.instruction-bottom__right {
+    flex-basis: 50%;
+    overflow: hidden;
+}
+
+.instruction-top__steps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 80px;
+}
+
+.instruction-top__step {
+    margin: 30px 0;
+}
+
+.instruction-top__right--img-block {
+ position: relative;
+}
+
+.instruction-top__right--img1 {
+    position: absolute;
+    top: 20px;
+    left: -20px;
+    width: 60%;
+    z-index: 2;
+
+}
+
+.instruction-top__right--img2 {
+    height: 100%;
+    width: 100%;
+
+}
+
+.instruction__paralax {
+    background-image: url(camp_img/home_page/instructin-paralacs_webp.webp);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+}
+
+.instruction__paralax--mask {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.instruction-top__step--number {
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: rgb(22, 73, 47);
+}
+
+.instruction-top__step--title {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.instruction-top__step--text {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.slide-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.instruction-bottom__slide--text {
+    font-size: 1.3rem;
+    font-weight: 400;
+    width: 80%;
+    text-align: justify;
+   
+}
+
+.instruction-bottom__slide--autor {
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 20px 0;
+    width: 80%;
+}
+
+.instruction-bottom__slider input[type=radio] {
+   display: none;
+}
+
+.instruction-bottom__slider label {
+   cursor:pointer;
+}
+
+.instruction-bottom__slides{
+   position: relative;
+   z-index: 1;
+}
+.instruction-slider__overflow {
+   width: 100%;
+   overflow: hidden;
+}
+#instruction-bottom__slide1:checked ~ .instruction-bottom__slides .instruction-bottom__slides-container {
+   margin-left: 0;
+}
+#instruction-bottom__slide2:checked ~ .instruction-bottom__slides .instruction-bottom__slides-container {
+   margin-left: -100%;
+}
+#instruction-bottom__slide3:checked ~ .instruction-bottom__slides .instruction-bottom__slides-container {
+   margin-left: -200%;
+}
+.instruction-bottom__slides .instruction-bottom__slides-container {
+   transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+   width: 300%;
+   position: relative;
+}
+
+.instruction-bottom__slides .instruction-bottom__slide {
+   width: 33.3%;
+   float:left;
+   height: 100%;
+   height: 400px;
+}
+
+.instruction-bottom__controls {
+   margin: -35% 0 0 0; 
+   width: 100%;
+   height: 50px;
+   z-index: 3;
+   position: relative;
+}
+
+.instruction-bottom__bullets {
+    margin: 15% 0 0 0;
+    text-align: center;
+    z-index: 2;
+ }
+
+.instruction-bottom__controls label {
+   transition: opacity 0.2s ease-out;
+   display: none;
+   width: 50px;
+   height: 50px;
+   opacity: 0.4;
+   position: relative;
+}
+
+.icon-right {
+    position: relative;
+    top: 16px;
+    left: 10px;
+}
+
+.instruction-bottom__controls label:hover {
+   opacity: 1;
+}
+
+#instruction-bottom__slide1:checked ~ .instruction-bottom__controls label:nth-child(3),
+#instruction-bottom__slide2:checked ~ .instruction-bottom__controls label:nth-child(1),
+#instruction-bottom__slide3:checked ~ .instruction-bottom__controls label:nth-child(2) {
+   display: block;
+   float: left;
+   transform: rotate(180deg);
+}
+
+#instruction-bottom__slide1:checked ~ .instruction-bottom__controls label:nth-last-child(2),
+#instruction-bottom__slide2:checked ~ .instruction-bottom__controls label:nth-last-child(1),
+#instruction-bottom__slide3:checked ~ .instruction-bottom__controls label:nth-last-child(3) {
+   display: block;
+   float: right;
+}
+
+.instruction-bottom__bullets label {
+   display: inline-block;
+   width: 10px;
+   height: 10px;
+   border-radius:100%;
+   background: rgb(204, 204, 204);
+   margin: 0 10px;
+}
+
+#instruction-bottom__slide1:checked ~ .instruction-bottom__bullets label:nth-child(1),
+#instruction-bottom__slide2:checked ~ .instruction-bottom__bullets label:nth-child(2),
+#instruction-bottom__slide3:checked ~ .instruction-bottom__bullets label:nth-child(3) {
+   background: rgb(68, 68, 68);
+}
+
+/* ____________________FOLLOWS____________________________ */
+
+.container-follows {
+    display: flex;
+    justify-content: space-around;
+    margin: 100px 0;
+}
+
+.box-follows {
+    position: relative;
+    width: 23%;
+
+}
+
+.box-follows-img {
+    width: 100%;
+    height: 100%;
+}
+
+.box-follows-info {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.box-follows:hover .box-follows-info,
+.box-follows-info:hover {
+    visibility: visible;
+    opacity: 1;
+   
+}
+
+/* _______________________FOOTER______________________________ */
+
+.container_footer {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2rem;
+    padding-top: 30px;
+}
+
+.left {
+    display: grid;
+    justify-items: start;
+    margin-left: 5%;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-auto-columns: 0;
+    grid-auto-rows: 0;
+    grid-template-areas: 
+    "menu__logo check-availability__button   "
+    "address menu-links"
+    "footer-subtitles footer-subtitles";
+} 
+
+.container_footer .menu__logo{
+    grid-area: menu__logo;
+    color: black;
+    margin: 0;
+}
+
+.container_footer .logo__img {
+    color: #ffffff;
+    margin-left: 0;
+}
+
+
+.container_footer .check-availability__btn {
+    grid-area: check-availability__button;
+    align-items: center;
+}
+
+.container_footer .address {
+    grid-area: address;
+    display: flex;
+    flex-direction: column;
+    line-height: 2.5rem;
+    
+}
+
+.container_footer .menu-links {
+    grid-area: menu-links;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-subtitles {
+    grid-area: footer-subtitles;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.footer-subtitles__text {
+    font-size: 1rem;
+}
+
+.container_footer .nav {
+    color: black;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    padding: 0;
+    margin-left: 30px;
+}
+
+.footer-subtitles__icon {
+    margin-right: 20px;
+}
+
+.right {
+    display: grid;
+    margin-right: 5%;
+    grid-template-columns: 48% 48%;
+    grid-template-rows: 80px 80px 80px 1fr 80px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-auto-columns: 0;
+    grid-auto-rows: 0;
+    grid-template-areas: 
+    "right-title right-title "
+    "first-name last-name"
+    "email subject"
+    "message message"
+    "submit .";
+}
+
+.right-title {
+    grid-area: right-title;
+    font-size: 2rem;
+
+}
+
+.first-name {
+    grid-area: first-name;
+}
+
+.last-name {
+    grid-area: last-name;
+}
+
+.email {
+    grid-area: email;
+}
+
+.subject {
+    grid-area: subject;
+}
+
+.message {
+    grid-area: message;
+}
+
+.submit__btn {
+    grid-area: submit;
+    width: min-content;
+}
+
+.item-right {
+    font-size: 1.2rem;
+}
+
+.right input, .right textarea {
+    width: 100%;
+    height: 40px;
+    background-color: aliceblue;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    text-indent: 25px;
+    font-size: 1.2rem;
+}
+
+.right textarea {
+    height: 80px;
+    resize: none;
+}
+
+
+.right input:hover, .right textarea:hover {
+    border: none;
+    border-bottom:2px solid black
+}
+
+.right [required]:hover {
+    border-bottom: 2px solid red;
+}
+
+.button-up {
+    display: none;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    z-index: 10;
+    right: 20px;
+    bottom: 130px;
+    border: none;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.active {
+    opacity: 1;
+    transform: translateY(0%);
+    transition: all 1.5s ease-in-out;
+}
+
+
+
+
+
+
+@media (max-width: 1060px) {
+    /* ____________________FOLLOWS____________________________ */
+    .container-follows {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .box-follows {
+        width: 300px;
+    }
+
+    /* ______________________FOOTER______________________________ */
+    .left {
+        display: grid;
+        justify-items: start;
+        margin-left: 5%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.5fr 1fr 1fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        grid-auto-columns: 0;
+        grid-auto-rows: 0;
+        grid-template-areas: 
+        "menu__logo "
+        "check-availability__button"
+        "address"
+        "footer-subtitles";
+    } 
+
+    .container_footer .menu-links {
+        display: none;
+    }
+/* ____________________INSTRUCTION________________________ */
+    .instruction-bottom__main {
+        flex-direction: column;
+    }
+
+    .instruction-bottom__controls {
+        margin: -30% 0 0 0; 
+    }
+
+    .icon-right {
+        top: 14px;
+    }
+}
+
+
+@media (max-width: 840px) {
+
+    /* ____________________All styles________________________ */
+    .container-block__subtitle {
+        flex-direction: column;
+    }
+
+    .container-block__container {
+        margin: 20px 0;
+    }
+
+    .subtitle-text h3 {
+        font-size: 2.2rem;
+        font-weight: 400;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    /* ____________________BOOKS________________________ */
+
+    .books-tetle h3 {
+        font-size: 2rem;
+    }
+
+    /* ____________________INSTRUCTION________________________ */
+    .instruction-top__main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: end;
+    }
+}
+
+@media (max-width: 706px) {
+    /* ____________________FOLLOWS____________________________ */
+    .box-follows {
+        width: 250px;
+    }
+}
+
+
+@media (max-width: 687px) {
+
+    /* ____________________All styles________________________ */
+
+    .container-block__title h2 {
+        text-align: center;
+        font-size: 2.2rem;
+    }
+
+    .subtitle-text h3 {
+        font-size: 1.8rem;
+    }
+
+    /* ________________________Buger_menu___________________ */
+
+    .menu__buttons {
+        display: none;
+    }
+
+    .menu {
+        position: fixed;
+        z-index: 20;
+    }
+
+    .menu__buttons--burger {
+        display: block;
+        position: fixed;
+        width: 100%;
+        top: -300px;
+        opacity: 0;
+        background-color:  rgb(30, 70, 50);
+        transition-duration: 0.3s;
+        transition-timing-function: ease-in-out;
+    }
+
+    [for="burger"] {
+        display: block;
+        position: absolute;
+        margin-right: calc(2% + 10px);
+        top: 25px;
+        right: 0;
+        z-index: 10;
+        color: white;
+    }
+
+    .menu__btn {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 20px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 10;
+    }
+      
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #ffffff;
+        transition-duration: 0.25s;
+    }
+
+    .menu__btn > span::before{
+        content: "";
+        top: -8px;
+    }
+
+
+    .menu__btn > span::after{
+        content: "";
+        top: 8px;
+    }
+
+    /* _______-_cros animation_________ */
+
+    #burger:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+
+    }
+
+    #burger:checked ~ .menu__btn > span::before {
+        transform: rotate(0);
+        top: 0;
+        
+    }
+
+    #burger:checked ~ .menu__btn > span::after {
+        transform: rotate(90deg);
+        top: 0;
+        
+    }
+
+    .rvs-list {
+        visibility: visible;
+        position: relative;
+        background-color: transparent;
+        top: 0px;
+        font-size: 1.4rem;
+        padding: 10px 0 10px 5%;
+    }
+
+    #burger:checked ~ .menu__buttons--burger {
+        top: 0;
+        padding: 20px 0;
+        opacity: 1;
+        height: 100vh;
+    }
+
+    #burger:checked ~ [for="burger"] {
+       position: fixed;
+    }
+  
+    .buttons-row {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding: 50px 20px 0 20px;
+        width: auto;
+    }
+
+    .buttons-row__button, .rvs-list__name {
+        margin: 0px;
+        padding: 10px 0;
+        font-size: 1.4rem;
+    }
+
+    .menu .green-button {
+        text-align: center;
+        padding: 15px;
+        font-size: 1.3rem;
+    }
+
+    .container-header summary{
+        padding: 10px 0;
+        text-decoration: none;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        cursor: pointer;
+        width: 50%;
+    }
+   
+    .spoiler[open] .spoiler__icon {
+        transform: rotate(180deg);
+        transition-duration: 0.3s;
+    }
+
+    .spoiler-menu {
+        width: 100%;
+    }
+
+     /* ________________________header___________________ */
+     .container-header {
+        height: 500px;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .header__main {
+        align-items: start;
+        margin-left: 5%;
+        top: 130px;
+        width: 90%;
+    }
+
+    .header-h {
+        margin: 0;
+        font-size: 3.8rem;
+    }
+
+
+    .check-availability {
+        width: 100%;
+        height: auto;
+        background-color:transparent;
+        flex-direction: column;
+        align-items: start;
+        margin-top: 40px;
+    }
+
+    .check-availability__text {
+        margin: 0 0 20px 0;
+        color: #ffffff;
+    }
+    
+  /* ________________________chat___________________ */
+
+    .chat__btn-adaptive {
+        display: block;
+    }
+
+    .chat__btn-fullscreen {
+        display: none;
+    }
+
+    .chat .chat__btn {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+    }
+
+   
+    .chat-form {
+        position: fixed;
+        width: 100%;
+        right: 0;
+        top: 0px;    
+    }
+
+
+    .chat-form__main {
+        height: calc(100vh - 140px);
+    }
+
+    .chat-form__header,
+    .chat-form__footer {
+        border-radius: 0;
+    }
+ 
+   /* ________________________Books___________________ */
+
+    .books {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, 15%);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-areas: 
+    "book1 book1     "
+    "book1 book1"
+    "book2 book3"
+    "book2 book3"
+    "book2 book4"
+    "book2 book4";
+    } 
+
+   /* ________________________INSTRUCTION___________________ */
+
+
+    .instruction__paralax {
+    height: 400px;
+    background-position-x: 40%;
+    }
+
+    .instruction-bottom__controls label {
+        margin: 0 -20px;
+    }
+
+    .instruction-bottom__controls {
+    margin: -20% 0 0 0; 
+    top: -140px;
+    }
+
+    .instruction-bottom__bullets {
+    margin: 0;
+    }
+}
+
+@media (max-width: 610px) {
+
+    /* _______________________FOLLOWS___________________ */
+    .container-follows {
+        display: flex;
+        flex-direction: column;
+        margin: 100px 0;
+        gap: 10px;
+    } 
+
+    .box-follows {
+        width: 100%;
+    }
+
+    /* ________________________FOOTER___________________ */
+    .container_footer {
+        display: flex;
+        flex-direction: column-reverse;
+        position: relative;
+    }
+
+    .left {
+        display: grid;
+        justify-items: start;
+        margin: 5%;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 1fr 0.5fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        grid-auto-columns: 0;
+        grid-auto-rows: 0;
+        grid-template-areas: 
+        "menu__logo check-availability__button"
+        "address . "
+        "footer-subtitles footer-subtitles";
+    } 
+
+    .container_footer .address {
+        line-height: 2rem;
+        
+    }
+
+    .right {
+        display: grid;
+        margin: 0 5%;
+        align-items: center;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 80px 80px 80px 1fr 80px 80px 80px;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px; 
+        grid-auto-columns: 0;
+        grid-auto-rows: 0;
+        grid-template-areas: 
+        "right-title"
+        "first-name"
+        "last-name"
+        "email"
+        "subject"
+        "message"
+        "submit ";
+    }
+}
+
+
+
+
+
+@media (max-width: 450px) {
+    /* ____________________All styles________________________ */
+
+    .container-block__container {
+        margin: 20px 0;
+        flex-direction: column;
+    }
+
+    /* ____________________BOOKS________________________ */
+
+    .books {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 300px);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        grid-template-areas: 
+        "book1 "
+        "book2 "
+        "book3 "
+        "book4 ";
+    }
+    .books-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* ____________________INSTRUCTION________________________ */
+    .instruction-bottom__controls label {
+        width: 30px;
+    }
+
+    .instruction-bottom__slide--text {
+        font-size: 1.1rem;
+    }
+    
+    .instruction-bottom__slide--autor {
+        font-size: 1.2rem;
+        padding: 10px 0;
+    }
+
+    .instruction-bottom__controls label {
+        margin: 0;
+    }
+
+   
+
+    /* _______________________FOOTER______________________________ */
+    .left {
+        display: grid;
+        justify-items: start;
+        margin: 5%;
+        align-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 1fr 0.5fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        grid-auto-columns: 0;
+        grid-auto-rows: 0;
+        grid-template-areas: 
+        "menu__logo"
+        "address"
+        "footer-subtitles";
+    } 
+
+    .container_footer .check-availability__btn {
+        grid-area: check-availability__button;
+        align-items: center;
+        display: none;
+    }
+
+    .footer-subtitles__text {
+        font-size: 0.8rem;
+    }
+}
+
+
+

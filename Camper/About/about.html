@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>About</title>
+        <link rel="stylesheet" href="../style.css" />
+        <link rel="stylesheet" href="../camp-head_style.css" />
+        <link rel="stylesheet" href="about.css" />
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300&display=swap");
+            @import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@400&display=swap");
+            @import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@500&display=swap");
+            @import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@600&display=swap");
+            @import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@700&display=swap");
+        </style>
+        <script src="https://kit.fontawesome.com/a509a621f7.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="fade-in">
+        <header>
+            <div class="container-header container-header__2nd-level-pages">
+                <img class="header-img" src="../camp_img/About/about_header_webp.webp" alt="RVs_header_webp" />
+                <nav class="menu" id="menu">
+                    <a href="../index.html" class="menu__logo">
+                        <div class="logo__img">
+                            <i class="logo__img-img fa-solid fa-mountain-sun fa-xl"></i>
+                        </div>
+                        <div class="logo__text">Dandy Campers <br />RV Rentals</div>
+                    </a>
+                    <input type="checkbox" id="burger" />
+                    <label class="menu__btn" for="burger">
+                        <span></span>
+                    </label>
+                    <div class="menu__buttons menu__buttons--burger">
+                        <div class="buttons-row">
+                            <a class="buttons-row__button check-availability__btn" href="../check.html">Check Availability</a>
+                            <details class="spoiler spoiler-menu">
+                                <summary class="spoiler__header">
+                                    <a class="buttons-row__button nav" href="../RVs/rvs.html">RVs</a>
+                                    <i class="spoiler__icon fa-solid fa-chevron-down fa-2xs"></i>
+                                </summary>
+                                <ul class="rvs-list">
+                                    <li><a class="rvs-list__name" href="../RVs/euro_camper.html">EuroCamper</a></li>
+                                    <li><a class="rvs-list__name" href="../RVs/vagong.html">Vagon</a></li>
+                                    <li><a class="rvs-list__name" href="../RVs/ranger_van.html">Ranger Van</a></li>
+                                    <li><a class="rvs-list__name" href="../RVs/travel_trailer.html">Travel Trailer</a></li>
+                                    <li><a class="rvs-list__name" href="../RVs/flying_cloud.html">Flying Cloud</a></li>
+                                    <li><a class="rvs-list__name" href="../RVs/motor_home.html">MotorHome</a></li>
+                                </ul>
+                            </details>
+                            <a class="buttons-row__button nav" href="../Trips/trips.html">Road Trips</a>
+                            <a class="buttons-row__button nav" href="../FAQ/faq.html">FAQ</a>
+                            <a class="buttons-row__button nav" href="about.html">About</a>
+                        </div>
+                    </div>
+                    <div class="menu__buttons">
+                        <ul class="buttons-row">
+                            <li id="rvs"><a class="buttons-row__button nav" href="../RVs/rvs.html">RVs</a></li>
+                            <li><a class="buttons-row__button nav" href="../Trips/trips.html">Road Trips</a></li>
+                            <li><a class="buttons-row__button nav" href="../FAQ/faq.html">FAQ</a></li>
+                            <li><a class="buttons-row__button nav" href="about.html" style="color: #73d7be">About</a></li>
+                            <li><a class="buttons-row__button green-button check-availability__btn" href="../check.html">Check Availability</a></li>
+                            <ul class="rvs-list">
+                                <li><a class="rvs-list__name" href="../RVs/euro_camper.html">EuroCamper</a></li>
+                                <li><a class="rvs-list__name" href="../RVs/vagong.html">Vagon</a></li>
+                                <li><a class="rvs-list__name" href="../RVs/ranger_van.html">Ranger Van</a></li>
+                                <li><a class="rvs-list__name" href="../RVs/travel_trailer.html">Travel Trailer</a></li>
+                                <li><a class="rvs-list__name" href="../RVs/flying_cloud.html">Flying Cloud</a></li>
+                                <li><a class="rvs-list__name" href="../RVs/motor_home.html">MotorHome</a></li>
+                            </ul>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="header__main">
+                    <div class="header slow-show">
+                        <h1 class="header-h">Our Story</h1>
+                        <h3 class="header-h3">
+                            I'm a paragraph. Click here to add your own text and edit me. <br />
+                            Let your users get to know you.
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="chat" id="chat">
+            <input type="checkbox" name="open-chat-btn" id="open-chat" />
+            <label for="open-chat">
+                <button onclick="openChat()" class="green-button chat__btn" id="chat__btn">
+                    <div class="logo__img chat__btn-img chat__btn-fullscreen">
+                        <i class="logo__img-img chat__btn-img-img fa-solid fa-mountain-sun fa-l"></i>
+                    </div>
+                        <p class="chat__btn-img-text chat__btn-fullscreen">Let's Chat!</p>
+                    <div class="chat__btn-adaptive">
+                        <i class="fa-regular fa-comment-dots fa-2xl" style="color: #ffffff;"></i>
+                    </div>
+                </button>
+            </label>
+            <div class="chat-form">
+                <div class="chat-form__header">
+                    <div class="logo__img chat-form__logo">
+                        <i class="logo__img-img chat-form__logo-img fa-solid fa-mountain-sun fa-2xl"></i>
+                    </div>
+                    <div class="chat-form__header-text">
+                        <p>Dandy Campers</p>
+                        <p>We’ll reply as soon as we can</p>
+                    </div>
+                    <input type="checkbox" name="close-chat-btn" id="close-chat" />
+                    <label for="close-chat" onclick="closeChat()">
+                        <i class="chat-form__header-mark fa-solid fa-xmark fa-xl"></i>
+                    </label>
+                </div>
+                <div class="chat-form__main"></div>
+                <div class="chat-form__footer">
+                    <input type="text" name="mesage" id="messageInput" placeholder="Welcome to Dandy Campers. How can we help?" />
+                    <button class="chat-form__footer-button" type="submit" name="send-mesage" onclick="sendMessage()" id="mesage">
+                        <i class="chat-form__footer-icon fa-brands fa-rocketchat fa-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <main class="about__wrapper">
+            <div class="container-block">
+                <div class="about__main-title">
+                    <div class="about__title-left">
+                        <div class="book book1 ">
+                            <div class="books-tetle slow-show ">
+                                <h3>About Us</h3>
+                            </div>
+                        </div>
+                        <div class="about-img">
+                            <img src="../camp_img/About/abou_left_webp.webp" alt="abou_left_webp">
+                        </div>
+                    </div>
+                    <div class="about__title-right">
+                        <div class="about-text">
+                            <p>
+                                I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.
+                            </p>
+                            <br>
+                            <p>
+                                This is a great space to write a long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide. Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors. Make your company stand out and show your visitors who you are.
+                            </p>
+                        </div>
+                        <div class="about-img">
+                            <img src="../camp_img/About/about_right_webp.webp" alt="about_right_webp">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-map">
+                <div class="container-block__title slow-show">
+                    <h2>Our Company Headquarters</h2>
+                </div>
+                <div id="map">
+                    <!-- <i class="map-marker fa-solid fa-location-dot fa-2xl" style="color: #ff0000;"></i>
+                    <img src="../camp_img/About/map_png.png" alt="/map_png"> -->
+                </div>
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSSF2E4Xt1gs-cVIMUXUkWT9BIVA3Kz54&callback=initMap&libraries=places"></script>
+            </div>
+        </main>
+        <footer>
+        <div class="container_footer">
+            <button class="button-up cyrcle" id="button-up" onclick="scrollUp()">
+                <i class="fa-solid fa-angles-up fa-2xl" style="color: #ffffff"></i>
+            </button>
+            <div class="left">
+                <a href="#" class="menu__logo">
+                    <div class="logo__img">
+                        <i class="logo__img-img fa-solid fa-mountain-sun fa-xl"></i>
+                    </div>
+                    <div class="logo__text">Dandy Campers <br />RV Rentals</div>
+                </a>
+                <button onclick="document.location='../check.html'" class="green-button check-availability__btn">Check Availability</button>
+                <div class="address">
+                    <p>500 Terry Francine Street</p>
+                    <p>San Francisco, CA 94158</p>
+                    <p>info@mysite.com</p> 
+                    <p>123-456-7890</p>
+                </div>
+                <div class="menu-links">
+                    <a class="buttons-row__button nav" href="../RVs/rvs.html">RVs</a>
+                    <a class="buttons-row__button nav" href="../Trips/trips.html">Road Trips</a>
+                    <a class="buttons-row__button nav" href="../FAQ/faq.html">FAQ</a>
+                    <a class="buttons-row__button nav" href="about.html">About</a>
+                </div>
+                <div class="footer-subtitles">
+                    <div class="footer-subtitles__icons">
+                        <a href="https://www.facebook.com/wix" target="_blank"><i class="footer-subtitles__icon fa-brands fa-square-facebook fa-xl" style="color: coral;"></i></a>
+                        <a href="https://www.instagram.com/wix/" target="_blank"><i class="footer-subtitles__icon fa-brands fa-square-instagram fa-xl" style="color: coral;"></i></a>
+                    </div>
+                    <p class="footer-subtitles__text">© 2035 by Dandy Campers. Powered and secured by Wix</p>
+                </div>
+            </div>
+            <form class="right footr-form" action="#" method="#">
+                    <div class="right-title">
+                        <p>Contact Us</p>
+                    </div>
+                    <div class="item-right first-name">
+                        <p>First Name</p>
+                        <input type="text" name="first-name">
+                    </div>
+                    <div class="item-right last-name">
+                        <p>Last Name</p>
+                        <input type="last-name" name="last-name">
+                    </div>
+                    <div class="item-right email">
+                        <p>Email*</p>
+                        <input type="email"  name="email" required>
+                    </div>
+                    <div class="item-right subject">
+                        <p>Subject</p>
+                        <input type="text" name="subject" >
+                    </div>
+                    <div class="item-right message">
+                        <p>Message*</p>
+                        <textarea name="message" required id="" cols="55" rows="10"></textarea>
+                    </div>
+                    <button class="green-button submit__btn" type="submit">Submit</button>
+            </form>
+        </div>
+    </footer>
+    <script src="../script.js"></script>
+    <script src="../map.js"></script>
+    </body>
+</html>

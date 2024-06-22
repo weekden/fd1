@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CampsRent</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="camp-head_style.css" />
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300&display=swap");
+            @import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@400&display=swap");
+            @import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@500&display=swap");
+            @import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@600&display=swap");
+            @import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@700&display=swap");
+        </style>
+        <script src="https://kit.fontawesome.com/a509a621f7.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="fade-in">
+        <header>
+            <div class="container-header" >
+                <img class="header-img" src="camp_img/home_page/header_webp.webp" alt="header_webp" />
+                <nav class="menu" id="menu">
+                    <a href="index.html" class="menu__logo">
+                        <div class="logo__img">
+                            <i class="logo__img-img fa-solid fa-mountain-sun fa-xl"></i>
+                        </div>
+                        <div class="logo__text">Dandy Campers <br />RV Rentals</div>
+                    </a>
+                    <input type="checkbox" id="burger" />
+                    <label class="menu__btn" for="burger">
+                        <span></span>
+                    </label>
+                    <div class="menu__buttons">
+                        <ul class="buttons-row">
+                            <li id="rvs"><a class="buttons-row__button nav" href="RVs/rvs.html">RVs</a></li>
+                            <li><a class="buttons-row__button nav" href="Trips/trips.html">Road Trips</a></li>
+                            <li><a class="buttons-row__button nav" href="FAQ/faq.html">FAQ</a></li>
+                            <li><a class="buttons-row__button nav" href="About/about.html">About</a></li>
+                            <li><a class="buttons-row__button green-button check-availability__btn" href="check.html">Check Availability</a></li>
+                            <ul class="rvs-list">
+                                <li><a class="rvs-list__name" href="RVs/euro_camper.html">EuroCamper</a></li>
+                                <li><a class="rvs-list__name" href="RVs/vagong.html">Vagon</a></li>
+                                <li><a class="rvs-list__name" href="RVs/ranger_van.html">Ranger Van</a></li>
+                                <li><a class="rvs-list__name" href="RVs/travel_trailer.html">Travel Trailer</a></li>
+                                <li><a class="rvs-list__name" href="RVs/flying_cloud.html">Flying Cloud</a></li>
+                                <li><a class="rvs-list__name" href="RVs/motor_home.html">MotorHome</a></li>
+                            </ul>
+                        </ul>
+                    </div>
+                    <div class="menu__buttons--burger">
+                        <div class="buttons-row">
+                            <a class="buttons-row__button  check-availability__btn" href="check.html">Check Availability</a>
+                            <details class="spoiler spoiler-menu">
+                                <summary class="spoiler__header">
+                                    <a class="buttons-row__button nav" href="RVs/rvs.html">RVs</a>
+                                    <i class="spoiler__icon fa-solid fa-chevron-down fa-2xs"></i>
+                                </summary>
+                                <ul class="rvs-list">
+                                    <li><a class="rvs-list__name" href="RVs/euro_camper.html">EuroCamper</a></li>
+                                    <li><a class="rvs-list__name" href="RVs/vagong.html">Vagon</a></li>
+                                    <li><a class="rvs-list__name" href="RVs/ranger_van.html">Ranger Van</a></li>
+                                    <li><a class="rvs-list__name" href="RVs/travel_trailer.html">Travel Trailer</a></li>
+                                    <li><a class="rvs-list__name" href="RVs/flying_cloud.html">Flying Cloud</a></li>
+                                    <li><a class="rvs-list__name" href="RVs/motor_home.html">MotorHome</a></li>
+                                </ul>
+                            </details>
+                            <a class="buttons-row__button nav" href="Trips/trips.html">Road Trips</a>
+                            <a class="buttons-row__button nav" href="FAQ/faq.html">FAQ</a>
+                            <a class="buttons-row__button nav" href="About/about.html">About</a>
+                        </div>
+                    </div>
+                </nav>
+                <div class="header__main">
+                    <div class="header slow-show">
+                        <h1 class="header-h">RV Rentals in California</h1>
+                    </div>
+                    <div class="check-availability">
+                        <div class="check-availability__text">Travel The Way You Want It</div>
+                        <button onclick="document.location='check.html'" class="green-button check-availability__btn">Check Availability</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="chat" id="chat">
+            <input type="checkbox" name="open-chat-btn" id="open-chat" />
+            <label for="open-chat">
+                <button onclick="openChat()" class="green-button chat__btn" id="chat__btn">
+                    <div class="logo__img chat__btn-img chat__btn-fullscreen">
+                        <i class="logo__img-img chat__btn-img-img fa-solid fa-mountain-sun fa-l"></i>
+                    </div>
+                        <p class="chat__btn-img-text chat__btn-fullscreen">Let's Chat!</p>
+                    <div class="chat__btn-adaptive">
+                        <i class="fa-regular fa-comment-dots fa-2xl" style="color: #ffffff;"></i>
+                    </div>
+                </button>
+            </label>
+            <div class="chat-form">
+                <div class="chat-form__header">
+                    <div class="logo__img chat-form__logo">
+                        <i class="logo__img-img chat-form__logo-img fa-solid fa-mountain-sun fa-2xl"></i>
+                    </div>
+                    <div class="chat-form__header-text">
+                        <p>Dandy Campers</p>
+                        <p>We’ll reply as soon as we can</p>
+                    </div>
+                    <input type="checkbox" name="close-chat-btn" id="close-chat" />
+                    <label for="close-chat" onclick="closeChat()">
+                        <i class="chat-form__header-mark fa-solid fa-xmark fa-xl"></i>
+                    </label>
+                </div>
+                <div class="chat-form__main"></div>
+                <div class="chat-form__footer">
+                    <input type="text" name="mesage" id="messageInput" placeholder="Welcome to Dandy Campers. How can we help?" />
+                    <button class="chat-form__footer-button" type="submit" name="send-mesage" onclick="sendMessage()" id="mesage">
+                        <i class="chat-form__footer-icon fa-brands fa-rocketchat fa-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <main class="wrapper">
+            <article class="book-With-us">
+                <div class="container-block">
+                    <div class="container-block__title slow-show">
+                        <h2>Why Book With Us</h2>
+                    </div>
+                    <div class="books">
+                        <div class="book book1">
+                            <div class="books-tetle slow-show">
+                                <h3>Roadsidebrbr Assistance</h3>
+                            </div>
+                        </div>
+                        <div class="book book2">
+                            <div class="books-tetle slow-show">
+                                <h3>Unlimited Miles</h3>
+                            </div>
+                            <img class="books-img" src="camp_img/home_page/book1_webp.webp" alt="" />
+                        </div>
+                        <div class="book book3">
+                            <div class="books-tetle slow-show">
+                                <h3>Trip Advice</h3>
+                            </div>
+                            <img class="books-img" src="camp_img/home_page/book2-webp.webp" alt="" />
+                        </div>
+                        <div class="book book4">
+                            <div class="books-tetle slow-show">
+                                <h3>No Booking Fees</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-block__subtitle slow-show">
+                        <div class="container-block__container">
+                            <div class="subtitle-cyrcle"></div>
+                            <div class="subtitle-text">
+                                <h3>Get to Know Us</h3>
+                            </div>
+                        </div>
+                        <div class="subtitle-button">
+                            <button onclick="document.location='Trips/trips.html'" class="green-button learn_more__btn">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="instruction">
+                <div class="instruction-top">
+                    <div class="container-block">
+                        <div class="container-block__title slow-show">
+                            <h2>Book Your Trip in 3 Easy Steps</h2>
+                        </div>
+                        <div class="instruction-top__main">
+                            <div class="instruction-top__left">
+                                <div class="instruction-top__steps slow-show">
+                                    <div class="instruction-top__step">
+                                        <p class="instruction-top__step--number">01</p>
+                                        <p class="instruction-top__step--title">Reserve Your Ride</p>
+                                        <p class="instruction-top__step--text">
+                                            I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you.
+                                        </p>
+                                    </div>
+                                    <div class="instruction-top__step slow-show">
+                                        <p class="instruction-top__step--number">02</p>
+                                        <p class="instruction-top__step--title">Plan Your Trip</p>
+                                        <p class="instruction-top__step--text">
+                                            I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you.
+                                        </p>
+                                    </div>
+                                    <div class="instruction-top__step slow-show">
+                                        <p class="instruction-top__step--number">03</p>
+                                        <p class="instruction-top__step--title">Hit the Road</p>
+                                        <p class="instruction-top__step--text">
+                                            I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="instruction-top__right">
+                                <div class="instruction-top__right--img-block">
+                                    <img class="instruction-top__right--img1" src="camp_img/home_page/instruction1_webp.webp" alt="instruction1_webp" />
+                                    <img class="instruction-top__right--img2" src="camp_img/home_page/instruction2_webp.webp" alt="instruction2_webp" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-block__subtitle slow-show">
+                            <div class="container-block__container">
+                                <div class="subtitle-cyrcle"></div>
+                                <div class="subtitle-text">
+                                    <h3>Find Your Next Road Trip</h3>
+                                </div>
+                            </div>
+                            <div class="subtitle-button">
+                                <button onclick="document.location='Trips/trips.html'" class="green-button learn_more__btn">Discover Trip Ideas</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="instruction__paralax">
+                    <div class="instruction__paralax--mask"></div>
+                </div>
+                <div class="instruction-bottom">
+                    <div class="container-block">
+                        <div class="instruction-bottom__main">
+                            <div class="instruction-bottom__left">
+                                <div class="container-block__title slow-show">
+                                    <h2>What People Say About Us</h2>
+                                </div>
+                            </div>
+                            <div class="instruction-bottom__right">
+                                <div class="instruction-bottom__slider">
+                                    <input type="radio" name="slider" id="instruction-bottom__slide1" checked />
+                                    <input type="radio" name="slider" id="instruction-bottom__slide2" />
+                                    <input type="radio" name="slider" id="instruction-bottom__slide3" />
+                                    <div class="instruction-bottom__slides">
+                                        <div class="instruction-slider__overflow" id="overflow">
+                                            <div class="instruction-bottom__slides-container">
+                                                <div class="instruction-bottom__slide slide_1">
+                                                    <div class="slide-content">
+                                                        <p class="instruction-bottom__slide--text">
+                                                            “I'm a testimonial. Click to edit me and add text that says something nice about you and your
+                                                            services. Let your Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, natus laborum aut
+                                                            mollitia tempora atque.customers review you and tell their friends how great you are.”
+                                                        </p>
+                                                        <p class="instruction-bottom__slide--autor">Harvey Daly</p>
+                                                    </div>
+                                                </div>
+                                                <div class="instruction-bottom__slide slide_2">
+                                                    <div class="slide-content">
+                                                        <p class="instruction-bottom__slide--text">
+                                                            “I'm a testimonial. Click to edit me Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
+                                                            quis! and add text that says something nice about you and your services. Let your customers review
+                                                            you and tell their friends how great you are.”
+                                                        </p>
+                                                        <p class="instruction-bottom__slide--autor">Bam Margera</p>
+                                                    </div>
+                                                </div>
+                                                <div class="instruction-bottom__slide slide_3">
+                                                    <div class="slide-content">
+                                                        <p class="instruction-bottom__slide--text">
+                                                            “I'm a testimonial. Quaerat tempore, vero ducimus perferendis, eius sunt, exercitationem cupiditate
+                                                            eaque quidem unde qui molestiae quo quia? Blanditiis, reiciendis harum? Perferendis, vel
+                                                            veritatis!Click to edit me and add text that says something nice about you and your services. Let
+                                                            your customers review you and tell their friends how great you are.”
+                                                        </p>
+                                                        <p class="instruction-bottom__slide--autor">Chris Cole</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="instruction-bottom__controls">
+                                        <label for="instruction-bottom__slide1"> <i class="icon-right fa-solid fa-chevron-right fa-xl"></i></label>
+                                        <label for="instruction-bottom__slide2"> <i class="icon-right fa-solid fa-chevron-right fa-xl"></i></label>
+                                        <label for="instruction-bottom__slide3"> <i class="icon-right fa-solid fa-chevron-right fa-xl"></i></label>
+                                    </div>
+                                    <div class="instruction-bottom__bullets">
+                                        <label for="instruction-bottom__slide1"></label>
+                                        <label for="instruction-bottom__slide2"></label>
+                                        <label for="instruction-bottom__slide3"></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="follow-us">
+                <div class="container-block">
+                    <div class="container-block__subtitle slow-show">
+                        <div class="container-block__container">
+                            <div class="subtitle-cyrcle"></div>
+                            <div class="subtitle-text">
+                                <h3>Find Your Next Road Trip</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-follows">
+                        <div class="box-follows">
+                            <img class="box-follows-img" src="camp_img/home_page/botton1_webp.webp" alt="" />
+                            <div class="box-follows-info">
+                                <p>@wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com, #camping, #RV, #trip, #outdoor</p>
+                            </div>
+                        </div>
+                        <div class="box-follows">
+                            <img class="box-follows-img" src="camp_img/home_page/botton2_webp.webp" alt="" />
+                            <div class="box-follows-info">
+                                <p>@wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com, #camping, #RV, #trip, #outdoor</p>
+                            </div>
+                        </div>
+                        <div class="box-follows">
+                            <img class="box-follows-img" src="camp_img/home_page/botton3_webp.webp" alt="" />
+                            <div class="box-follows-info">
+                                <p>@wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com, #camping, #RV, #trip, #outdoor</p>
+                            </div>
+                        </div>
+                        <div class="box-follows">
+                            <img class="box-follows-img" src="camp_img/home_page/botton4_webp.webp" alt="" />
+                            <div class="box-follows-info">
+                                <p>@wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com, #camping, #RV, #trip, #outdoor</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </main>
+        <footer>
+            <div class="container_footer">
+                <button class="button-up cyrcle" id="button-up" onclick="scrollUp()">
+                    <i class="fa-solid fa-angles-up fa-2xl" style="color: #ffffff;"></i>
+                </button>
+                <div class="left">
+                    <a href="#" class="menu__logo">
+                        <div class="logo__img">
+                            <i class="logo__img-img fa-solid fa-mountain-sun fa-xl"></i>
+                        </div>
+                        <div class="logo__text">Dandy Campers <br />RV Rentals</div>
+                    </a>
+                    <button onclick="document.location='check.html'" class="green-button check-availability__btn">Check Availability</button>
+                    <div class="address">
+                        <p>500 Terry Francine Street</p>
+                        <p>San Francisco, CA 94158</p>
+                        <p>info@mysite.com</p>
+                        <p>123-456-7890</p>
+                    </div>
+                    <div class="menu-links">
+                        <a class="buttons-row__button nav" href="RVs/rvs.html">RVs</a>
+                        <a class="buttons-row__button nav" href="Trips/trips.html">Road Trips</a>
+                        <a class="buttons-row__button nav" href="FAQ/faq.html">FAQ</a>
+                        <a class="buttons-row__button nav" href="">About</a>
+                    </div>
+                    <div class="footer-subtitles">
+                        <div class="footer-subtitles__icons">
+                            <a href="https://www.facebook.com/wix" target="_blank"
+                                ><i class="footer-subtitles__icon fa-brands fa-square-facebook fa-xl" style="color: coral"></i
+                            ></a>
+                            <a href="https://www.instagram.com/wix/" target="_blank"
+                                ><i class="footer-subtitles__icon fa-brands fa-square-instagram fa-xl" style="color: coral"></i
+                            ></a>
+                        </div>
+                        <p class="footer-subtitles__text">© 2035 by Dandy Campers. Powered and secured by Wix</p>
+                    </div>
+                </div>
+                <form class="right footr-form" action="#" method="#">
+                    <div class="right-title">
+                        <p>Contact Us</p>
+                    </div>
+                    <div class="item-right first-name">
+                        <p>First Name</p>
+                        <input type="text" name="first-name" />
+                    </div>
+                    <div class="item-right last-name">
+                        <p>Last Name</p>
+                        <input type="last-name" name="last-name" />
+                    </div>
+                    <div class="item-right email">
+                        <p>Email*</p>
+                        <input type="email" name="email" required />
+                    </div>
+                    <div class="item-right subject">
+                        <p>Subject</p>
+                        <input type="text" name="subject" />
+                    </div>
+                    <div class="item-right message">
+                        <p>Message*</p>
+                        <textarea name="message" required id="" cols="55" rows="10"></textarea>
+                    </div>
+                    <button class="green-button submit__btn" type="submit">Submit</button>
+                </form>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

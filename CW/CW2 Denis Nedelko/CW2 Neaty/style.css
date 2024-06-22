@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgba(0, 101, 153, 1);
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.left{
+  background-color: rgba(0, 101, 153, 1);
+  width: 30%;
+  float: left;
+}
+
+.logo{
+    padding: 10% 0;
+    text-align: center;
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 1);
+}
+
+.navi {
+    margin-left: 30%;
+    font-size: 1.5rem;
+    line-height: 4rem;
+}
+
+.navi a{
+    color: white;
+    text-decoration: none;
+}
+
+.navi a:hover{
+    color: rgba(154,205,50,1);
+}
+
+.right{
+    background-color: rgba(255, 255, 255, 1);
+    width: 70%;
+    margin-left: 30%;
+}
+
+.head_img{
+    width: 100%;
+}
+
+.text1{
+    padding: 0% 2% 0% 8%;
+    line-height: 2.5em;
+}
+
+.text1 p:first-child{
+    font-size: 2.5rem;
+    color: rgba(0, 101, 153, 1);
+    padding: 5% 0%;
+}
+
+.plug{
+    height: 5vh;
+    clear: both;
+}
+
+.about{
+    padding: 0% 2% 0% 8%;
+}
+
+.about_img{
+    float: left;
+    width: 30%;
+}
+
+.text2{
+    line-height: 2.5rem;
+    padding: 0% 2% 2% 2%;
+    margin-left: 30%;
+}
+
+.text2 p:first-child{
+    font-size: 2rem;
+    color: rgba(0, 101, 153, 1);
+    padding-bottom: 2%;
+}
+
+.text2 .button{
+    background-color: rgba(0, 101, 153, 1);
+    color: rgba(255, 255, 255, 1);
+    padding: 3% 10%;
+    font-size: 1.2rem;
+    text-decoration: none;  
+}
+
+.text2 .button:hover{
+    background-color: rgba(0, 101, 153, 1);
+    color: rgba(154,205,50,1);
+}
+
+.galery1, .galery2, .galery3{
+    color: rgba(0, 101, 153, 1);
+    font-size: 2rem;
+    padding: 0% 2% 2% 8%;
+}
+
+.galery1_img, .galery2_img, .galery3_img{
+    padding: 0% 2% 0% 8%;
+}
+
+.galery1_img img{
+    width: 19%;
+    height: auto;  
+}
+
+.galery2_img img{
+    width: 32%;
+    height: auto;  
+}
+
+.galery3_img img{
+    width: 24%;
+    height: auto;  
+}
+
+.author{
+    padding-left: 8%;
+    padding-bottom: 2%;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 1rem;
+}
+
+@media (max-width:780px){
+    .navi {
+        margin-left: 0%;
+        font-size: 1.5rem;
+        line-height: 4rem;
+    }
+}

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>FAQ</title>
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="../camp-head_style.css">
+        <link rel="stylesheet" href="faq.css">
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300&display=swap");
+            @import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@400&display=swap");
+            @import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@500&display=swap");
+            @import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@600&display=swap");
+            @import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@700&display=swap");
+        </style>
+        <script src="https://kit.fontawesome.com/a509a621f7.js" crossorigin="anonymous"></script>
+        
+    </head>
+    <body class="fade-in">
+        <header>
+            <div class="container-header container-header__2nd-level-pages">
+                <img class="header-img" src="../camp_img/FAQ/faq_header_webp.webp" alt="faq_header_webp" />
+                <nav class="menu" id="menu">
+                    <a href="../index.html" class="menu__logo">
+                        <div class="logo__img">
+                            <i class="logo__img-img fa-solid fa-mountain-sun fa-xl"></i>
+                        </div>
+                        <div class="logo__text">Dandy Campers <br />RV Rentals</div>
+                    </a>
+                    <input type="checkbox" id="burger" />
+                    <label class="menu__btn" for="burger">
+                        <span></span>
+                    </label>
+                    <div class="menu__buttons menu__buttons--burger">
+                        <div class="buttons-row">
+                            <a class="buttons-row__button check-availability__btn" href="../check.html">Check Availability</a>
+                            <details class="spoiler spoiler-menu">
+                                <summary class="spoiler__header">
+                                    <a class="buttons-row__button nav" href="../RVs/rvs.html">RVs</a>
+                                    <i class="spoiler__icon fa-solid fa-chevron-down fa-2xs"></i>
+                                </summary>
+                                <ul class="rvs-list">
+                                    <li><a class="rvs-list__name" href="../RVs/euro_camper.html">EuroCamper</a></li>
+                                    <li><a class="rvs-list__name" href="../RVs/vagong.html">Vagon</a></li>
+                                    <li><a class="rvs-list__name" href="../RVs/ranger_van.html">Ranger Van</a></li>
+                                    <li><a class="rvs-list__name" href="../RVs/travel_trailer.html">Travel Trailer</a></li>
+                                    <li><a class="rvs-list__name" href="../RVs/flying_cloud.html">Flying Cloud</a></li>
+                                    <li><a class="rvs-list__name" href="../RVs/motor_home.html">MotorHome</a></li>
+                                </ul>
+                            </details>
+                            <a class="buttons-row__button nav" href="../Trips/trips.html">Road Trips</a>
+                            <a class="buttons-row__button nav" href="faq.html">FAQ</a>
+                            <a class="buttons-row__button nav" href="../About/about.html">About</a>
+                        </div>
+                    </div>
+                    <div class="menu__buttons">
+                        <ul class="buttons-row">
+                            <li id="rvs"><a class="buttons-row__button nav" href="../RVs/rvs.html">RVs</a></li>
+                            <li><a class="buttons-row__button nav" href="../Trips/trips.html">Road Trips</a></li>
+                            <li><a class="buttons-row__button nav" href="faq.html" style="color: #73d7be">FAQ</a></li>
+                            <li><a class="buttons-row__button nav" href="../About/about.html">About</a></li>
+                            <li><a class="buttons-row__button green-button check-availability__btn" href="../check.html">Check Availability</a></li>
+                            <ul class="rvs-list">
+                                <li><a class="rvs-list__name" href="../RVs/euro_camper.html">EuroCamper</a></li>
+                                <li><a class="rvs-list__name" href="../RVs/vagong.html">Vagon</a></li>
+                                <li><a class="rvs-list__name" href="../RVs/ranger_van.html">Ranger Van</a></li>
+                                <li><a class="rvs-list__name" href="../RVs/travel_trailer.html">Travel Trailer</a></li>
+                                <li><a class="rvs-list__name" href="../RVs/flying_cloud.html">Flying Cloud</a></li>
+                                <li><a class="rvs-list__name" href="../RVs/motor_home.html">MotorHome</a></li>
+                            </ul>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="header__main">
+                    <div class="header">
+                        <h1 class="header-h">FAQ</h1>
+                        <h3 class="header-h3">
+                            I'm a paragraph. Click here to add your own text and edit me. <br />
+                            Let your users get to know you.
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="chat" id="chat">
+            <input type="checkbox" name="open-chat-btn" id="open-chat" />
+            <label for="open-chat">
+                <button onclick="openChat()" class="green-button chat__btn" id="chat__btn">
+                    <div class="logo__img chat__btn-img chat__btn-fullscreen">
+                        <i class="logo__img-img chat__btn-img-img fa-solid fa-mountain-sun fa-l"></i>
+                    </div>
+                        <p class="chat__btn-img-text chat__btn-fullscreen">Let's Chat!</p>
+                    <div class="chat__btn-adaptive">
+                        <i class="fa-regular fa-comment-dots fa-2xl" style="color: #ffffff;"></i>
+                    </div>
+                </button>
+            </label>
+            <div class="chat-form">
+                <div class="chat-form__header">
+                    <div class="logo__img chat-form__logo">
+                        <i class="logo__img-img chat-form__logo-img fa-solid fa-mountain-sun fa-2xl"></i>
+                    </div>
+                    <div class="chat-form__header-text">
+                        <p>Dandy Campers</p>
+                        <p>We’ll reply as soon as we can</p>
+                    </div>
+                    <input type="checkbox" name="close-chat-btn" id="close-chat" />
+                    <label for="close-chat" onclick="closeChat()">
+                        <i class="chat-form__header-mark fa-solid fa-xmark fa-xl"></i>
+                    </label>
+                </div>
+                <div class="chat-form__main"></div>
+                <div class="chat-form__footer">
+                    <input type="text" name="mesage" id="messageInput" placeholder="Welcome to Dandy Campers. How can we help?" />
+                    <button class="chat-form__footer-button" type="submit" name="send-mesage" onclick="sendMessage()" id="mesage">
+                        <i class="chat-form__footer-icon fa-brands fa-rocketchat fa-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <main class="faq__wrapper">
+            <div class="container-block">
+                <div class="faq-header">
+                    <h4>Frequently asked questions</h4>
+                </div>
+                <input type="radio" name="faq-button" id="faq-block1" checked />
+                <label for="faq-block1"> General </label>
+                <input type="radio" name="faq-button" id="faq-block2" />
+                <label for="faq-block2"> Setting up FAQs </label>
+                <div class="container__faq-qestions">
+                    <div class="faq-qestions__block1">
+                        <details class="spoiler faq__spoiler">
+                            <summary class="spoiler__header">
+                                <p>What is an FAQ section?</p>
+                                <i class="spoiler__icon fa-solid fa-chevron-down fa-2xs"></i>
+                            </summary>
+                            <div class="spoiler-content">
+                                <p class="spoiler-content__text">
+                                    An FAQ section can be used to quickly answer common questions about your business like "Where do you ship to?", "What are
+                                    your opening hours?".
+                                </p>
+                            </div>
+                            <div class="post-container__icons spoiler-icons">
+                                <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-square-facebook fa-xl" style="color: coral"></i></a>
+                                <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-square-instagram fa-xl" style="color: coral"></i></a>
+                                <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-square-twitter fa-xl" style="color: coral"></i></a>
+                            </div>
+                        </details>
+                        <div class="faq-qestions__line"></div>
+                        <details class="spoiler faq__spoiler">
+                            <summary class="spoiler__header">
+                                <p>Why do FAQs matter?</p>
+                                <i class="spoiler__icon fa-solid fa-chevron-down fa-2xs"></i>
+                            </summary>
+                            <div class="spoiler-content">
+                                <p class="spoiler-content__text">
+                                    FAQs are a great way to help site visitors find quick answers to common questions about your business and create a better
+                                    navigation experience.
+                                </p>
+                            </div>
+                            <div class="post-container__icons spoiler-icons">
+                                <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-square-facebook fa-xl" style="color: coral"></i></a>
+                                <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-square-instagram fa-xl" style="color: coral"></i></a>
+                                <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-square-twitter fa-xl" style="color: coral"></i></a>
+                            </div>
+                        </details>
+                        <div class="faq-qestions__line"></div>
+                        <details class="spoiler faq__spoiler">
+                            <summary class="spoiler__header">
+                                <p>Where can I add my FAQs?</p>
+                                <i class="spoiler__icon fa-solid fa-chevron-down fa-2xs"></i>
+                            </summary>
+                            <div class="spoiler-content">
+                                <p class="spoiler-content__text">
+                                    FAQs can be added to any page on your site or to your Wix mobile app, giving access to members on the go. "How can I book a service?"
+                                </p>
+                            </div>
+                            <div class="post-container__icons spoiler-icons">
+                                <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-square-facebook fa-xl" style="color: coral"></i></a>
+                                <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-square-instagram fa-xl" style="color: coral"></i></a>
+                                <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-square-twitter fa-xl" style="color: coral"></i></a>
+                            </div>
+                        </details>
+                        <div class="faq-qestions__line"></div>
+                    </div>
+                    <div class="faq-qestions__block2">
+                        <details class="spoiler faq__spoiler">
+                            <summary class="spoiler__header">
+                                <p>How do I add a new question & answer?</p>
+                                <i class="spoiler__icon fa-solid fa-chevron-down fa-2xs"></i>
+                            </summary>
+                            <div class="spoiler-content">
+                                <p class="spoiler-content__text">
+                                    To add a new FAQ follow these steps:
+                                    <br />
+                                    1. Manage FAQs from your site dashboard or in the Editor.
+                                    <br />
+                                    2. Add a new question & answer.
+                                    <br />
+                                    3. Assign your FAQ to a category.
+                                    <br />
+                                    4. Save and publish.
+                                    <br />
+                                    You can always come back and edit your FAQs.
+                                </p>
+                            </div>
+                            <div class="post-container__icons spoiler-icons">
+                                <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-square-facebook fa-xl" style="color: coral"></i></a>
+                                <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-square-instagram fa-xl" style="color: coral"></i></a>
+                                <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-square-twitter fa-xl" style="color: coral"></i></a>
+                            </div>
+                        </details>
+                        <div class="faq-qestions__line"></div>
+                        <details class="spoiler faq__spoiler">
+                            <summary class="spoiler__header">
+                                <p>Can I insert an image, video, or GIF in my FAQ?</p>
+                                <i class="spoiler__icon fa-solid fa-chevron-down fa-2xs"></i>
+                            </summary>
+                            <div class="spoiler-content">
+                                <p class="spoiler-content__text">
+                                    To add a new FAQ follow these steps:
+                                    <br />
+                                    1. Manage FAQs from your site dashboard or in the Editor.
+                                    <br />
+                                    2. Add a new question & answer.
+                                    <br />
+                                    3. Assign your FAQ to a category.
+                                    <br />
+                                    4. Save and publish.
+                                    <br />
+                                    You can always come back and edit your FAQs.
+                                </p>
+                            </div>
+                            <div class="post-container__icons spoiler-icons">
+                                <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-square-facebook fa-xl" style="color: coral"></i></a>
+                                <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-square-instagram fa-xl" style="color: coral"></i></a>
+                                <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-square-twitter fa-xl" style="color: coral"></i></a>
+                            </div>
+                        </details>
+                        <div class="faq-qestions__line"></div>
+                        <details class="spoiler faq__spoiler">
+                            <summary class="spoiler__header">
+                                <p>How do I edit or remove the 'Frequently Asked Questions' title?</p>
+                                <i class="spoiler__icon fa-solid fa-chevron-down fa-2xs"></i>
+                            </summary>
+                            <div class="spoiler-content">
+                                <p class="spoiler-content__text">
+                                    To add a new FAQ follow these steps:
+                                    <br />
+                                    1. Manage FAQs from your site dashboard or in the Editor.
+                                    <br />
+                                    2. Add a new question & answer.
+                                    <br />
+                                    3. Assign your FAQ to a category.
+                                    <br />
+                                    4. Save and publish.
+                                    <br />
+                                    You can always come back and edit your FAQs.
+                                </p>
+                            </div>
+                            <div class="post-container__icons spoiler-icons">
+                                <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-square-facebook fa-xl" style="color: coral"></i></a>
+                                <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-square-instagram fa-xl" style="color: coral"></i></a>
+                                <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-square-twitter fa-xl" style="color: coral"></i></a>
+                            </div>
+                        </details>
+                        <div class="faq-qestions__line"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="container_footer">
+                <button class="button-up cyrcle" id="button-up" onclick="scrollUp()">
+                    <i class="fa-solid fa-angles-up fa-2xl" style="color: #ffffff"></i>
+                </button>
+                <div class="left">
+                    <a href="#" class="menu__logo">
+                        <div class="logo__img">
+                            <i class="logo__img-img fa-solid fa-mountain-sun fa-xl"></i>
+                        </div>
+                        <div class="logo__text">Dandy Campers <br />RV Rentals</div>
+                    </a>
+                    <button onclick="document.location='../check.html'" class="green-button check-availability__btn">Check Availability</button>
+                    <div class="address">
+                        <p>500 Terry Francine Street</p>
+                        <p>San Francisco, CA 94158</p>
+                        <p>info@mysite.com</p>
+                        <p>123-456-7890</p>
+                    </div>
+                    <div class="menu-links">
+                        <a class="buttons-row__button nav" href="../RVs/rvs.html">RVs</a>
+                        <a class="buttons-row__button nav" href="../trips.html">Road Trips</a>
+                        <a class="buttons-row__button nav" href="faq.html">FAQ</a>
+                        <a class="buttons-row__button nav" href="../About/about.html">About</a>
+                    </div>
+                    <div class="footer-subtitles">
+                        <div class="footer-subtitles__icons">
+                            <a href="https://www.facebook.com/wix" target="_blank"
+                                ><i class="footer-subtitles__icon fa-brands fa-square-facebook fa-xl" style="color: coral"></i
+                            ></a>
+                            <a href="https://www.instagram.com/wix/" target="_blank"
+                                ><i class="footer-subtitles__icon fa-brands fa-square-instagram fa-xl" style="color: coral"></i
+                            ></a>
+                        </div>
+                        <p class="footer-subtitles__text">© 2035 by Dandy Campers. Powered and secured by Wix</p>
+                    </div>
+                </div>
+                <form class="right footr-form" action="#" method="#">
+                    <div class="right-title">
+                        <p>Contact Us</p>
+                    </div>
+                    <div class="item-right first-name">
+                        <p>First Name</p>
+                        <input type="text" name="first-name" />
+                    </div>
+                    <div class="item-right last-name">
+                        <p>Last Name</p>
+                        <input type="last-name" name="last-name" />
+                    </div>
+                    <div class="item-right email">
+                        <p>Email*</p>
+                        <input type="email" name="email" required />
+                    </div>
+                    <div class="item-right subject">
+                        <p>Subject</p>
+                        <input type="text" name="subject" />
+                    </div>
+                    <div class="item-right message">
+                        <p>Message*</p>
+                        <textarea name="message" required id="" cols="55" rows="10"></textarea>
+                    </div>
+                    <button class="green-button submit__btn" type="submit">Submit</button>
+                </form>
+            </div>
+        </footer>
+        <script src="../script.js"></script>
+    </body>
+</html>

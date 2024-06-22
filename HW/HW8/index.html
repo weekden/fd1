@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="ramka">
+    <form action="#" method="#" >
+        <p class="head-text">Для публикации вашей статьи заполните,<span>пожалуйста, следующую форму:</span></p>
+        <br>
+        <div class="row row1">
+            <p class="form-label">Название статьи:</p>
+            <p class="right-form"><input type="text" name="text_name"></p>
+        </div>
+        <div class="row row2">
+            <p class="form-label">Рубрика:</p>
+            <p class="right-form"> 
+                <select class="theme-public" name="theme-public">
+                    <option value="value1" selected>Программирование</option>
+                    <option value="value2">Математика</option>
+                    <option value="value3">Физика</option>
+                    <option value="value4">Философия</option>
+                </select>
+            </p>
+        </div> 
+        <div class="row row3">
+            <p class="form-label">Публикация:</p>
+            <div class="right-form">
+                <label class="form-public" name="form-public" for="radio1">
+                    <input type="radio" id="radio1" name="public" value="value1"> на сайте
+                </label>
+                <label class="form-public" name="form-public" for="radio2">
+                    <input type="radio" id="radio2" name="public" value="value2"> в журнале
+                </label>
+                <label class="form-public" name="form-public" for="radio3">
+                    <input type="radio" id="radio3" name="public" value="value1&value2"> на сайте и в журнале
+                </label>
+            </div> 
+        </div>
+        <div class="row row4">
+            <p class="form-label">Разрешить коментарий:</p>
+            <p class="right-form"> 
+                <input type="checkbox" id="checkbox1" name="coment-accept" value="1" checked>
+            </p>
+        </div>
+        <div class="row row5">
+            <p class="form-label">Текст статьи:</p>
+            <p><textarea name="text-public" rows="4" maxlength=""></textarea></p>
+            <p><input type="submit" value="Опубликовать"></p>
+        </div>
+    </form>
+    </div>
+</body>
+</html>

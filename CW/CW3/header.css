@@ -1,0 +1,316 @@
+.conteiner__header {
+    padding: 2% 5% 5% 5%;
+    background-image: linear-gradient(90deg, rgb(74, 198, 200), rgb(110, 225, 188));
+    position: relative;
+    color: rgb(74, 198, 200);
+}
+
+.top__header {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    width: 100%;
+}
+
+ input#burger, [for="burger"] {
+    display: none;
+}
+
+.top__logo {
+    flex-grow: 0.5;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    flex-grow: 1;
+}
+
+.top__menu {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 0.5;
+}
+
+.top__menu-button {
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    border: 1px solid transparent;
+    padding: 10px ;
+}
+
+.top__menu-button:hover {
+    color: rgb(205, 225, 240);
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px ;
+}
+.top__menu-button:active {
+    box-shadow: inset 0 0 5px rgb(65, 177, 179);
+    border-color: rgb(169, 169, 169);
+
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.left__header-header {
+    color: rgb(255, 255, 255);
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding: 80px 0 25px 0;
+
+}
+
+.left__text-text {
+    color: rgb(255, 255, 255);
+    opacity: 0.8;
+    padding: 0 0 25px 0;
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+.left__button {
+    height: 50px;
+    width: 150px;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    color: rgb(74, 198, 200);
+    cursor: pointer;
+}
+
+.left__button:hover {
+    background: none ;
+    color: white;
+}
+
+.left__button:active {
+    box-shadow: inset 0 0 5px rgb(36, 99, 100);
+}
+                
+.main__right {   
+    width: 70%;
+}
+
+.main__right-img {
+    position: absolute;
+    width: auto;
+    bottom: -13%;
+    right: 3%;
+    height: 87%;
+    opacity: 0.7;
+    max-width: 59vw;
+}
+
+.main__right-img_back {
+    position: absolute;
+    width: auto;
+    bottom: -12%;
+    right: 2.5%;
+    height: 87%;
+    opacity: 0.3;
+    max-width: 60vw; 
+}
+
+/* _________________Background circle______________________________ */
+.conteiner__header::before {
+    content: "";
+    position: absolute;
+    width: 5em;
+    height: 5em;
+    top: -15px;
+    left: 10%;
+    border-radius: 50%;
+    background-color: rgb(225, 250, 238);
+    opacity: 0.15;
+}
+
+.conteiner__header::after {
+    content: "";
+    position: absolute;
+    width: 10em;
+    height: 10em;
+    top: 35%;
+    left: 25%;
+    border-radius: 50%;
+    background-color: rgb(225, 250, 238);
+    opacity: 0.15;
+}
+
+.main__right::after {  
+    content: "";
+    position: absolute;
+    width: 10em;
+    height: 10em;
+    top: 60%;
+    right: 2%;
+    border-radius: 50%;
+    background-color: rgb(225, 250, 238);
+    opacity: 0.15;
+}
+
+.main__right::before {
+    content: "";
+    position: absolute;
+    width: 5em;
+    height: 5em;
+    top: 25%;
+    left: 65%;
+    border-radius: 50%;
+    background-color: rgb(225, 250, 238);
+    opacity: 0.15;
+
+}
+/* _________________@media______________________________ */
+
+ @media (max-width:1040px) {
+    .main__right-img, .main__right-img_back {
+        height: 77%;
+    }
+    .title_image::after{
+        top:33%;
+    }
+}
+
+@media (max-width:875px) {
+    .main__right-img, .main__right-img_back {
+        height:67%;;
+    }
+}
+
+@media (max-width: 767px) {
+    .conteiner__header {
+        height: 850px;
+        padding: 0;
+    }
+    
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .left__text-text {
+        width: 90%;
+        margin: auto;
+    
+    }
+
+    .main__right-img {
+        display: none;
+    }
+
+    .main__right-img_back {
+        position: absolute;
+        width: auto;
+        bottom: -10%;
+        right: 6%;
+        height: 50%;
+        opacity: 1;
+        max-width: 85vw; 
+    }
+/* _________________burger-menu______________________________ */
+
+    .burger__background {
+        position: fixed;
+        display: block;
+        width: 100%;
+        height: 50px;
+        background-color: rgb(58, 67, 72);
+        z-index: 10;
+    }
+
+    [for="burger"] {
+        display: block;
+        width: 70px;
+        text-align: center;
+        position: fixed;
+        right: 30px;
+        top: 10px;
+        cursor: pointer;
+        border: 1.5px solid;
+        padding: 2px;
+        z-index: 10;
+    }
+
+    .top__logo {
+        position: fixed;
+        display: block;
+        left: 30px;
+        height: 50px;
+        top: 8px;
+        z-index: 10;
+    }
+
+    .top__menu { 
+        display: block;
+        visibility: hidden;
+        position: fixed;
+        background-color: rgb(58, 67, 72);
+        width: 100%;
+        height: fit-content;
+        top: calc(50px - 100%);
+        z-index: 5;
+        padding: 0 40px 10px 40px;
+        transition-duration: 1s;
+    }
+
+    #burger:checked + label ~ .top__menu {
+        visibility: visible;
+        top:50px;
+    }
+
+
+    .top__menu-button {
+        display: block;
+        width: 100%;
+        color: rgb(255, 255, 255);
+        font-size: 1rem;
+        font-weight: 400;
+        text-decoration: none;
+        border: 1px solid transparent;
+        padding: 0;
+        padding-left: 15px;
+        line-height: 2.5rem;
+    }
+    
+    .top__menu-button:hover{
+        color: rgb(169, 169, 169);
+        border: 1px solid rgb(169, 169, 169);
+        border-radius: 25px;
+        padding: 0px;
+        padding-left: 15px;
+    }
+
+    .top__menu-button:active{
+        box-shadow: inset 0 0 10px rgb(97, 98, 98);
+    }
+}
+
+@media (max-width: 510px){
+    .main__right-img_back{
+        height: 40%;
+    }
+}
+
+

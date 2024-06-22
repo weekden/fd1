@@ -1,0 +1,82 @@
+
+.newsletter {
+    background-color: rgb(74, 198, 200);
+}
+
+.newsletter-title {
+    color: rgb(255, 255, 255);
+    font-size: 2.8rem;
+    font-weight: 400;
+}
+
+.newsletter-second {
+    color: rgb(255, 255, 255);
+    opacity: 0.9;
+    font-weight: 200;
+}
+
+.newsletter_main {
+    display: flex;
+    justify-content: center;
+}
+
+.newsletter__conteiner_input {
+    position: relative;
+    width: 350px;
+}
+
+.newsletter__conteiner-input {
+    position: relative;
+}
+
+.newsletter__input--input {
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    background-color: rgb(74, 198, 200);
+    text-indent: 25px;
+    font-size: 1.2rem;
+    outline: none;
+}
+
+.newsletter__input--input::-webkit-input-placeholder { 
+    color: rgb(255, 255, 255); 
+    font-size: 1.2rem;
+}
+
+.newsletter__input--submit {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-color: rgb(74, 198, 200);
+    cursor: pointer;
+    border: none;
+    top:5px;
+    right: 25px;
+}
+
+@media (max-width: 767px) {
+
+    .newsletter{
+        background-image: linear-gradient(90deg, rgb(74, 198, 200), rgb(110, 225, 188));
+    }
+
+    .newsletter__input--input,
+    .newsletter__input--submit {
+       background: none;
+    }
+
+    .newsletter__conteiner_input{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0; 
+} 
+.ramka{
+    border: red double;
+}
+
+.row {
+    overflow: hidden;
+    width: 100%;
+    line-height: 1.5rem;
+}
+
+.row input{
+    vertical-align: middle;
+    margin:-2px 0 0 0;
+}
+
+.form-label{
+    width: 19%;
+    float: left;
+}
+
+.right-form{
+    float: left;
+    width: 81%;
+}
+
+.row1 input, .row5 textarea{
+    width: 100%;
+}
+
+.row2 .theme-public{
+    width: 40%;
+}
+
+.row3 .form-public{
+    display: inline-block;
+    padding: 0% 3% 0% 0%; 
+    vertical-align: middle;
+}
+
+@media (max-width:900px) {
+    
+    .head-text span::before{
+        content: '\A';
+        white-space: pre; 
+    }  
+
+    .form-label{
+        width: 100%;
+    }
+    .right-form{
+        width: 100%;
+    }
+    
+    .row2 .theme-public{
+        width: 100%;
+    }
+    
+    .row3 .form-public{
+        display: block;
+        width: 100%;
+    }
+ 
+    .row4 .form-label{
+        width: auto;
+    }
+  
+    .row4 .right-form{
+        display: inline-block;
+        padding-left: 0.5%;
+        width: 0%;
+    }
+}
+
+

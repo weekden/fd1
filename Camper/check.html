@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RVs Check</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="check-style.css">
+    <link rel="stylesheet" href="camp-head_style.css">
+    <script src="https://kit.fontawesome.com/a509a621f7.js" crossorigin="anonymous"></script>
+</head>
+</head>
+<body>
+    <form action="#" method="#" class="container__form-check">
+        <div class="form-check__header">
+            <h2 class="form-check__header-header">Check Availability</h2>
+            <a href="#" onclick="history.back()"><i class="form-check__header-back fa-regular fa-circle-xmark fa-xl" style="color: #ffffff;"></i></a>
+        </div>
+        <div class="for-check__main">
+            <div class="info trevel-info">
+                <p>Travel detalis</p>
+            </div>
+            <div class="info perconal-info">
+                <p>Personal detalis</p>
+            </div>
+            <div class="inp inp1">
+                <p class="inp-title">Pick Up *</p>
+                <select name="pointA" required >
+                    <option selected disabled></option>
+                    <option value="1">San Diego</option>
+                    <option value="2">Malibu Beach</option>
+                    <option value="3">Mission Bay</option>
+                    <option value="4">Nappa Valley</option>
+                </select>
+            </div>
+            <div class="inp inp2">
+                <p class="inp-title">Drop Off *</p>
+                <select name="pointB" required>
+                    <option selected disabled></option>
+                    <option value="1">San Diego</option>
+                    <option value="2">Malibu Beach</option>
+                    <option value="3">Mission Bay</option>
+                    <option value="4">Nappa Valley</option>
+                </select>
+            </div>
+            <div class="inp inp3">
+                <p class="inp-title">Start Data *</p>
+                <input type="date" placeholder="none"  required>
+            </div>
+            <div class="inp inp4">
+                <p class="inp-title">End Data *</p>
+                <input type="date"  required>
+            </div>
+            <div class="inp inp5">
+                <p class="inp-title">Number of Passangeres *</p>
+                <input type="number"  required min="0" max="100">
+            </div>
+            <div class="inp inp6">
+                <p class="inp-title">RV Type</p>
+                <select name="RV_Tipe">
+                    <option selected disabled></option>
+                    <option value="1">EuroCamper</option>
+                    <option value="2">Vanagon</option>
+                    <option value="3">MotorHome</option>
+                    <option value="4">NRangerVan</option>
+                    <option value="5">TravelTrailer</option>
+                    <option value="6">FlyingCloud</option>
+                </select>
+            </div>
+            <div class="form-check__line"></div>
+            <div class="inp inp7">
+                <p class="inp-title">First Name</p>
+                <input type="text">
+            </div>
+            <div class="inp inp8">
+                <p class="inp-title">Last Name</p>
+                <input type="text">
+            </div>
+            <div class="inp inp9">
+                <p class="inp-title">Phone Number</p>
+                <input type="text">
+            </div>
+            <div class="inp inp10">
+                <p class="inp-title">Email *</p>
+                <input type="email" required>
+            </div>
+            <div class="form-check__btn">
+                <button class="green-button form-check__btn-submit " type="submit" value="Push">Submit</button>
+            </div>
+        </div>
+    </form>    
+</body>
+</html>

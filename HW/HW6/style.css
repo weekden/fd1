@@ -1,0 +1,35 @@
+/* ----------------CHESS---------------------------------------- */
+tr:nth-child(odd) td:nth-child(odd)
+{
+  background-color: black;
+}
+ tr:nth-child(even) td:nth-child(even)
+{
+  background-color: black;
+}
+.CHESS tr:first-child td,
+.CHESS tr:last-child td 
+{
+  background-color: green;
+  height: 25px;
+  opacity: 0.5;
+}
+
+.CHESS tr td:first-child,
+.CHESS tr td:last-child 
+{
+  background-color: green;
+  width: 25px;
+  opacity: 0.5;
+} 
+
+/* -------------------STARS--------------------------------------- */
+.star:hover, .star:hover ~ .star
+{
+  content: url(star1.png);
+}
+.star-row
+{
+  transform: rotate(180deg);
+  text-align: right;
+}

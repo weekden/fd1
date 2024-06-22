@@ -1,0 +1,48 @@
+.composition{
+    background-image: url(img/bg.jpg);
+    width: 600px;
+    height: 400px;
+    position: relative;
+}
+.Obj-1 {
+    top: 15px;
+    left:  170px;
+    z-index: 1;
+    position: absolute;
+}
+.Obj-2 {
+    top: 70px;
+    left:  50px;
+    z-index: 2;
+    position: absolute;
+}
+.Obj-3 {
+    top: 160px;
+    left:  140px;
+    z-index: 3;
+    position: absolute;
+}
+.Obj-4 {
+    top: 110px;
+    right:  180px;
+    z-index: 4;
+    position: absolute;
+}
+.Obj-5 {
+    top: 340px;
+    right:  460px;
+    z-index: 5;
+    position: absolute;
+}
+.Obj-6 {
+    top: 40px;
+    right:  60px;
+    z-index: 6;
+    position: absolute;
+}
+.Obj-7 {
+    top: 300px;
+    right:  0px;
+    z-index: 7;
+    position: absolute;
+}

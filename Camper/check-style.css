@@ -1,0 +1,207 @@
+
+body {
+    background-color: rgb(39, 124, 82);
+}
+.container__form-check {
+    margin: 50px 15% 50px 20%;
+}
+
+.form-check__header {
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    margin: 50px 0;
+}
+
+.for-check__main {
+    font-size: 1.2rem;
+    color: #ffffff;
+    display: grid;
+    grid-template-columns: 20% 35% 35%;
+    grid-template-rows: 1fr 1fr 1fr 40px 1fr 1fr 1fr;
+    grid-column-gap: 40px;
+    grid-template-areas:
+    "trevel-info inp1 inp2"
+    "trevel-info inp3 inp4"
+    "trevel-info inp5 inp6"
+    "hor-line hor-line hor-line"
+    "perconal-info inp7 inp8"
+    "perconal-info inp9 inp10"
+    "perconal-info sub-btn sub-btn";
+}
+
+.trevel-info {
+    grid-area: trevel-info;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.perconal-info {
+    grid-area: perconal-info;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.inp1 {
+    grid-area: inp1;
+}
+
+.inp2 {
+    grid-area: inp2;
+}
+
+.inp3 {
+    grid-area: inp3;
+}
+
+.inp4 {
+    grid-area: inp4;
+}
+
+.inp5 {
+    grid-area: inp5;
+}
+
+.inp6 {
+    grid-area: inp6;
+}
+
+.inp7 {
+    grid-area: inp7;
+}
+
+.inp8 {
+    grid-area: inp8;
+}
+
+.inp9 {
+    grid-area: inp9;
+}
+
+.inp10 {
+    grid-area: inp10;
+}
+
+.form-check__line {
+    grid-area: hor-line;
+    height: 20px;
+    border-bottom: 1px solid rgb(201, 197, 197);;
+}
+
+.form-check__btn {
+    grid-area: sub-btn;
+    display: flex;
+    justify-content: end; 
+}
+
+.inp-title {
+    padding: 10px 0;
+    font-size: 1.2rem;
+}
+
+.form-check__btn .form-check__btn-submit {
+    width: 150px;
+    height: 50px;
+    margin: 40px 0;
+    background-color: #ffffff;
+    color: rgb(82, 78, 78);
+}
+
+.form-check__btn button[type="submit"]:hover {
+    background-color: rgb(247, 210, 166);
+
+}
+
+.inp input, .inp select {
+  background-color: rgb(32, 99, 64);
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #ffffff ;
+  color: rgb(186, 192, 194);
+  height: 50px;
+  width: 100%;
+  font-size: 1.2rem;
+  text-indent: 25px; 
+}
+
+.inp select, .inp [type="date"], .inp [type="number"] {
+    cursor: pointer;
+}
+
+.inp option {
+    background-color: floralwhite;
+    font-size: 1.2rem;
+
+}
+
+.inp input:hover, .inp select:hover {
+    background-color: rgb(22, 73, 47);
+    border-bottom: 2px solid #ffffff ;
+}
+
+.inp [required]:hover {
+    border-bottom: 2px solid red;
+}
+
+@media (max-width: 1000px) {
+    .container__form-check {
+        margin: 50px 10% 50px 5%;
+    }
+}
+
+@media (max-width: 768px) {
+    .for-check__main {
+        font-size: 1.2rem;
+        color: #ffffff;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:40px repeat(3, 1fr) 40px 40px repeat(3, 1fr);
+        grid-column-gap: 40px;
+        grid-template-areas:
+        "trevel-info ."
+        "inp1 inp2"
+        "inp3 inp4"
+        "inp5 inp6"
+        "hor-line hor-line"
+        "perconal-info ."
+        "inp7 inp8"
+        "inp9 inp10"
+        "sub-btn sub-btn ";
+    }
+}
+
+
+@media (max-width: 585px) {
+    .for-check__main {
+        font-size: 1.2rem;
+        color: #ffffff;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:40px repeat(6, 1fr) 40px 40px repeat(5, 1fr);
+        grid-column-gap: 40px;
+        grid-template-areas:
+   
+        "trevel-info"
+        "inp1"
+        "inp2"
+        "inp3"
+        "inp4"
+        "inp5"
+        "inp6"
+        "hor-line"
+        "perconal-info"
+        "inp7"
+        "inp8"
+        "inp9"
+        "inp10"
+        "sub-btn";
+    }
+
+    .form-check__btn {
+        grid-area: sub-btn;
+        display: flex;
+        justify-content: start; 
+    }
+}

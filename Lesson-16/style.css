@@ -1,0 +1,178 @@
+/* .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px;
+    grid-template-areas: 
+    "head head head head"
+    "A B C D"
+    "E F C G"
+    "H I J G"
+    "H . . ."
+    "foot foot foot foot ";
+    color: white;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    margin: 40px;
+    width: 600px;
+  }
+  
+  .A {
+    border-radius: 5px;
+    background-color: rgb(68, 65, 65);
+    padding: 20px;
+  }
+  
+  .head {
+    grid-area: head;
+  }
+
+  .aaa{
+    grid-area: A;
+
+  }
+  
+  .bbb {
+    grid-area: B;
+  }
+  
+  .ccc {
+    grid-area: C;
+  }
+  
+  .ddd {
+    grid-area: D;
+  }
+  
+  .eee {
+    grid-area: E;
+  }
+
+  .fff {
+    grid-area: F;
+  }
+
+  .ggg {
+    grid-area:G;
+  }
+
+  .hhh {
+    grid-area: H;
+  }
+
+  .iii {
+    grid-area: I;
+  }
+  
+  .jjj {
+    grid-area: J;
+  }
+
+  .foot{
+    grid-area: foot;
+  } */
+
+  /* .animation {
+    display: flex;
+    height: 800px;
+    position: relative;
+    border: 1px solid darkblue;
+  }
+  
+  .circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    animation-name: krug;
+    animation-duration: 10s;
+  }
+  
+
+ @keyframes krug {
+    0% {
+      top: 0%;
+      left: 0%;
+    }
+    25% {
+      top: 0%;
+      left: 95%;
+    }
+    50% {
+      left: 95%;
+      top: 85%;
+    }
+    75% {
+      left: 0%;
+      top: 85%;
+    }
+    100% {
+      top: 0%;
+      left: 0%;
+    }
+  } */
+
+  .frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: -200px;
+    width: 400px;
+    height: 400px;
+    border-radius: 2px;
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    background-color: #333333;
+    color: white;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  }
+  
+  .boxes {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .box {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-basis: auto;
+    flex-shrink: 1;
+    flex-grow: 1;
+    width: 20%;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+  }
+  
+  .box span {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: transparent;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+  }
+  
+  .box:nth-child(odd) {
+    background-color: blue;
+  }
+  
+  .box:nth-child(even) {
+    background-color: orange;
+  }
+
+  .box:hover{
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .box:hover span{
+    color: white;
+  }
+

@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ________________________Conteiner for all blocks___________________________________ */
+.conteiner__block {
+  padding: 0 10% 150px 10%;
+  position: relative;
+}
+
+
+/* ______________________Blocks title___________________________ */
+
+.blocks-title {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 150px 0 80px 0;
+}
+
+.blocks-title__first {
+  padding: 15px 0;
+  color: rgb(74, 198, 200);
+}
+
+.blocks-title__main {
+  padding: 15px 0;
+  font-size: 2rem;
+  color: rgb(57, 66, 71);
+  font-weight: 500;
+}
+ 
+.blocks-title__second {
+  color: rgb(122, 139, 148);
+  padding: 15px 0;
+  font-size: 1.1rem;
+}
+
+

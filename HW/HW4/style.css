@@ -1,0 +1,54 @@
+table {
+    font-family: 'Orbitron', sans-serif;
+    border-collapse: collapse;
+    width: 100% ;
+    height: auto;
+}
+.header, .footer{
+    background-color:rgb(0, 0, 0);
+    opacity: 0.85;
+    text-align: center;
+    font-size: 1.5em;
+    color: #CED0D2
+}
+.header2{
+    background-color: rgb(0, 0, 0);
+    opacity: 0.8;
+    text-align: center;
+    color: #CED0D2;
+    font-size: 1.3em;
+    letter-spacing: 0.5em;
+}
+.modelsHeader{
+    text-align: center;
+    letter-spacing: 0.5em;
+    font-size: 1.5em;
+}
+.models {
+    width: 20%;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.82;
+    font-size: 1em;
+    line-height: 4em;
+    color: #CED0D2;
+    padding: 0;
+}
+a{
+    color: #CED0D2
+}
+.images{
+    background-image: url(img/background.jpg);
+    opacity: 0.75;
+    vertical-align: top;
+    padding: 1em;
+}
+.text{
+    background-image: url(img/background.jpg);
+    opacity: 0.75;
+    vertical-align: top; 
+    padding: 1em;
+    color: antiquewhite;
+    text-align: justify;
+    font-size: 1em;
+}
+

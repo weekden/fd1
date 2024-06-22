@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button onclick="showUser()">Enter login</button>
+    <!-- <button onclick="colorDown()">colorWhite</button> -->
+    <div id="first">Autorisation</div>
+    <div id="second"></div>
+
+    <!-- Forma -->
+    <div id="wrapper">                      
+        <h3>Задайте нам свой вопрос</h3>
+        <label>Имя: <input id="userName" type="text" /></label>
+        <textarea id="text" placeholder="Введите вопрос"></textarea>
+        <button onclick="setInfo()">Отправить!</button>
+      </div>
+      <div id="response">
+        <p>
+          Спасибо за Ваш вопрос, <span id="responseName"></span>! Наш специалист
+          скоро свяжется с Вами!
+        </p>
+      </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

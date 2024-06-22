@@ -1,0 +1,23 @@
+.main{
+    background-color: red;
+    text-align: center;
+}
+li{
+    display: inline;
+}
+@media (max-width:800px){
+    .main {
+        background-color: blue;
+    }
+    li{
+        display: block;
+    }
+}
+@media (max-width:400px){
+    .main {
+        background-color: green;
+    }
+    li{
+        display: none;
+    }
+}

@@ -1,0 +1,174 @@
+    .conteiner_footer {
+        background-color: rgb(36, 189, 200);
+    }
+
+    .colums {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr 1fr;
+        grid-template-rows: 1fr;
+        padding-top: 200px;
+    }
+
+    .colums_centr {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .colum {
+        color: rgb(255, 255, 255);
+        font-size: 1.1rem;
+    }
+
+    .colum_title {
+        color: rgb(255, 255, 255);
+        font-size: 1.2rem;
+        padding-bottom: 30px;
+    }
+
+    .colum_text {
+        opacity: 0.7;
+        font-weight: 300;
+        line-height: 2rem;
+        padding: 0 40px 20px 0;
+    }
+
+    .colum_centr__navi, .colum_centr__links {
+        width: 40%;
+     
+    }
+    .colum_link {
+        display: block;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        opacity: 0.7;
+        line-height: 3rem; 
+        font-size: 1.1rem;
+    }
+
+    .colum_link:hover {
+        opacity: 0.9;
+    }
+
+    .colum_link:active {
+        opacity: 1;
+    }
+
+
+    .colum_right {
+        padding-left: 10%;
+    }
+
+    .colum_left {
+        padding-right: 10%;
+    }
+
+    .colum_contacts {
+        font-size: 0.95rem;
+        display: grid;
+        align-items: baseline;
+        grid-template-columns: 40px 1fr;
+        grid-template-rows: 1fr 40px 40px 40px;
+        grid-row-gap: 20px;
+        width: 70%;
+        grid-template-areas: 
+        "icon_location location_description"
+        "icon_phone    phone_description"
+        "icon_mail     mail_description"
+        "icon_time     time_description";
+    }
+
+    .icon_location {
+        grid-area: icon_location;
+    }
+
+    .icon_phone {
+        grid-area: icon_phone;
+    }
+
+    .icon_mail {
+        grid-area: icon_mail;
+    }
+
+    .icon_time {
+        grid-area: icon_time;
+    }
+
+    .location_description {
+        grid-area: location_description;
+        opacity: 0.7;
+    }
+
+    .phone_description {
+        grid-area: phone_description;
+        
+    }
+    
+    .mail_description {
+        grid-area: mail_description;
+    }
+
+    .time_description {
+        grid-area: time_description;
+        opacity: 0.7;
+    }
+
+    .circle_icon {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: rgb(36, 189, 195);
+        position: relative;
+    }
+
+    .network_icons {
+        padding-top: 80px;
+    }
+    .network_icon {
+        position: absolute;
+        top: 25px;
+        left: 15px;
+    }
+
+    .botton_title__text {
+        display: block;
+        color: rgb(255, 255, 255);
+        opacity: 0.7;
+        text-align: center;
+        padding-top: 50px;
+        font-size: 0.9rem;
+    }
+
+    .botton_title__text--symbol {
+        font-size: 1.2rem;
+    }
+
+    @media (max-width: 767px) {
+
+        .colums {
+            display: flex;
+            flex-direction: column;
+        }
+        .colum, .colum_centr__links, .colum_centr__navi {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .colums_centr {
+            display: flex;
+           flex-direction: column;
+        }
+
+        .colum_contacts i {
+            text-align: left;
+         }
+         
+         .colum_right {
+            padding-left: 0;
+        }
+    
+        .colum_left {
+            padding-right: 0;
+        } 
+        
+    }

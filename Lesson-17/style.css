@@ -1,0 +1,50 @@
+body{
+    display: flex;
+    background-color: antiquewhite;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    border: 1px solid black;
+    position: relative;
+    top: 100px;
+}
+
+.contact{
+    position: absolute;
+    top: -10px;
+    z-index: 1;
+    background-color: antiquewhite;
+    padding: 0 40px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.text{
+    width: 80%;
+    padding: 50px 0;
+}
+
+button{
+    background-color: black;
+    color: white;
+    width: 40%;
+    height: 50px;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+
+}
+
+@media (max-width: 500px){
+    .contact{
+        top: 0;
+        z-index: 0;
+    }
+}

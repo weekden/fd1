@@ -1,0 +1,120 @@
+.pricing {
+    background-color: rgb(240, 248, 255);
+}
+
+.pricing__cards {
+display: flex;
+justify-content: space-between;
+line-height: 2rem;
+}
+
+.pricing__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    width: 23%;
+}
+
+.pcard__title {
+    background-color: rgb(77, 198, 200);
+    border-radius: 0 0 5px 5px;
+    padding: 5px;
+    margin: 0 0 10px 0;
+    width: 35%;
+    
+}
+
+.pcard__title-text {
+    color: rgb(255, 255, 255);
+    display: block;
+    text-align: center;
+}
+
+.pcard__coast, .pcard__content {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 20px 0;
+}
+
+.pcard__coast-coast {
+    font-size: 2.5em;
+    font-weight: 600;
+    color: rgb(57, 66, 71);
+}
+
+.pcard__coast-index {
+    font-size: 1.5rem;
+    position: relative;
+    top: -10px;
+    font-weight: 400;
+}
+
+.pcard__coast-action {
+    color: rgb(169, 169, 169);
+    padding: 10px 0 0 0;
+}
+
+.pcard-button {
+    width: 50%;
+    height: 50px;
+    background-color: rgba(74, 198, 200, 0.2);
+    color: rgb(74, 198, 200);
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+.pcard-button:hover {
+    background-color: rgba(74, 198, 200, 0.1);
+}
+.pcard-button:active {
+    background-color: rgb(240, 248, 255);
+
+}
+
+.pcard__contennt-title {
+    padding: 0 0 20px 0;
+}
+
+.pcard__content-second {
+    color: rgb(169, 169, 169);
+}
+
+@media (max-width:1100px) {
+
+    .pricing__cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+        grid-row-gap: 30px;
+        } 
+
+    .pricing__card {
+         width: 95%;
+    }
+
+    .pcard-button {
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 600px) { 
+
+    .pricing__cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        justify-items: center;
+        grid-row-gap: 30px;
+        } 
+
+    .pricing__card {
+         width: 100%;
+    }
+
+}
